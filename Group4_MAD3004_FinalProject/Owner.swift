@@ -22,5 +22,13 @@ public class Owner: Person
         self.businessNumber = businessNumber
         self.website = website
     }
+    
+    override func display() {
+        print("-----Owner-----")
+        super.display()
+        print("Comapny: \(self.companyTitle ?? "No Company provided")")
+        print("Business Number: \(self.businessNumber ?? "No Number provided")")
+        print("Website: \(self.website ?? "No webiste provided")")
+    }
 }
 
