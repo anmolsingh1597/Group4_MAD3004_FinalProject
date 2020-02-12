@@ -10,5 +10,9 @@ import Foundation
 
 public class Driver: Person
 {
+    var drivingLicenceNumber: String
+    var isDrivingHistoryCleared: Bool
+    var salary: Double
+    
     
 }
