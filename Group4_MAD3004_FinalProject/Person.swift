@@ -39,4 +39,21 @@ public class Person
              self.userName = userName
              self.password = password
          }
-}
+    
+    func display() {
+        print("-----Person-----")
+        print("Id: \(self.id)")
+        print("First Name: \(self.firstName )")
+        print("Last Name: \(self.lastName)")
+        print("Gender: \(self.gender)")
+          if let d = self.birthDate{
+             print("Birthdate: \(d)")
+             print("Age: \(self.age)")
+             }else{
+                 print("No Birthdate Found")
+             }
+        print("Mobile: \(self.mobileNumber)")
+        print("Email: \(self.emailId)")
+        print("User Name: \(self.userName)")
+        print("Password: \(self.password)")
+    }}
