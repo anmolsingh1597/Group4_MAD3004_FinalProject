@@ -21,5 +21,17 @@ public class Driver: Person
                self.salary = salary
         super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
        
-    } 
+    }
+    
+    override func display() {
+        print("-----Driver-----")
+        super.display()
+        print("Licence Number: \(self.drivingLicenceNumber)")
+        if self.isDrivingHistoryCleared == true {
+                    print("Driving History: Clear")
+                    }else{
+                        print("Driving History: Not_Clear")
+                    }
+        print("Salary: $\(self.salary)")
+    }
 }
