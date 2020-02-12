@@ -17,6 +17,7 @@
 		9B7936A223F4BFB100DCB86B /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7936A123F4BFB100DCB86B /* Vehicle.swift */; };
 		9B7936A423F4C01000DCB86B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7936A323F4C01000DCB86B /* Car.swift */; };
 		9B7936A623F4C0A800DCB86B /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7936A523F4C0A800DCB86B /* Motorcycle.swift */; };
+		9B7936A823F4C0E800DCB86B /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7936A723F4C0E800DCB86B /* Bus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		9B7936A123F4BFB100DCB86B /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		9B7936A323F4C01000DCB86B /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		9B7936A523F4C0A800DCB86B /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		9B7936A723F4C0E800DCB86B /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				9B7936A123F4BFB100DCB86B /* Vehicle.swift */,
 				9B7936A323F4C01000DCB86B /* Car.swift */,
 				9B7936A523F4C0A800DCB86B /* Motorcycle.swift */,
+				9B7936A723F4C0E800DCB86B /* Bus.swift */,
 			);
 			path = Group4_MAD3004_FinalProject;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7936A823F4C0E800DCB86B /* Bus.swift in Sources */,
 				9B7936A223F4BFB100DCB86B /* Vehicle.swift in Sources */,
 				9B79369723F4B4CF00DCB86B /* Person.swift in Sources */,
 				9B7936A023F4BB5A00DCB86B /* Driver.swift in Sources */,
