@@ -21,5 +21,5 @@ public class Driver: Person
                self.salary = salary
         super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
        
-    }
+    } 
 }
