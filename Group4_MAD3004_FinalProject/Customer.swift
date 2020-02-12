@@ -20,4 +20,11 @@ public class Customer: Person
         self.address = address
         self.city = city
     }
+    
+    override func display() {
+          print("-----Customer-----")
+          super.display()
+          print("Adress: \(self.address ?? "No address provided")")
+          print("City: \(self.city ?? "No city provided")")
+      }
 }
