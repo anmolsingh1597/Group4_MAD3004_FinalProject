@@ -10,6 +10,7 @@
 		8E007B3A23F4B2E800D6DC2A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E007B3923F4B2E800D6DC2A /* main.swift */; };
 		9B79369723F4B4CF00DCB86B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79369623F4B4CF00DCB86B /* Person.swift */; };
 		9B79369A23F4B54500DCB86B /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79369923F4B54500DCB86B /* Enum.swift */; };
+		9B79369C23F4B6DF00DCB86B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79369B23F4B6DF00DCB86B /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		8E007B3923F4B2E800D6DC2A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B79369623F4B4CF00DCB86B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9B79369923F4B54500DCB86B /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		9B79369B23F4B6DF00DCB86B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				9B79369823F4B53600DCB86B /* Enum */,
 				8E007B3923F4B2E800D6DC2A /* main.swift */,
 				9B79369623F4B4CF00DCB86B /* Person.swift */,
+				9B79369B23F4B6DF00DCB86B /* Customer.swift */,
 			);
 			path = Group4_MAD3004_FinalProject;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				9B79369723F4B4CF00DCB86B /* Person.swift in Sources */,
 				8E007B3A23F4B2E800D6DC2A /* main.swift in Sources */,
 				9B79369A23F4B54500DCB86B /* Enum.swift in Sources */,
+				9B79369C23F4B6DF00DCB86B /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
