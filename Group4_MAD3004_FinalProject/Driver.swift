@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Driver
+public class Driver: Person
 {
     
 }
