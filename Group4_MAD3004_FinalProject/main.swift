@@ -13,3 +13,5 @@ var p1 = Person(id: 24500, firstName: "Anmol", lastName: "Singh", gender: .Male,
 p1.display()
 
 var p2 = Person(id: 24566, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8767543", email: "me_aman@me.com", userName: "Me_Aman", password: "hgjfkhs")
+
+p2.display()
