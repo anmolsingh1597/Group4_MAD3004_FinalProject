@@ -17,3 +17,5 @@ var p2 = Person(id: 24566, firstName: "Aman", lastName: "Kaur", gender: .Female,
 p2.display()
 
 var c1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
+
+c1.display()
