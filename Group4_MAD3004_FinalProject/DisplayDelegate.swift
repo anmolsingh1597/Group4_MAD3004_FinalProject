@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol DisplayDelegate  // interface
+{
+    func display()
+}
