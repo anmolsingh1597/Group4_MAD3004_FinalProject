@@ -25,3 +25,5 @@ var c2 = Customer(id: 34789, firstName: "CUS_Aman", lastName: "Kaur", gender: .F
 c2.display()
 
 var d1 = Driver(id: 44342, firstName: "DRI_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "875422", email: "dri_anmol@driver.com", userName: "dri_anmol", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
+
+d1.display()
