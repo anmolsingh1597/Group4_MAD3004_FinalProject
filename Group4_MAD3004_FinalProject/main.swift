@@ -31,3 +31,5 @@ d1.display()
 var d2 = Driver(id: 44563, firstName: "DRI_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8743678", email: "dri_aman@driver.com", userName: "dri_aman", password: "hy76t5r", drivingLicenceNumber: "JHYT78654", isDrivingHistoryCleared: true, salary: 9989.90)
 
 d2.display()
+
+var o1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil)
