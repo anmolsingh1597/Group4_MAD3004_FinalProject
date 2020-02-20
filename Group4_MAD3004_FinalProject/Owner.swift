@@ -13,7 +13,7 @@ public class Owner: Person
     var companyTitle: String?
     var businessNumber: String?
     var website: String?
-    //var vehicleList:
+    //var vehicleList: [Vehicle]
     
     init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, companyTitle: String?, businessNumber: String?, website: String?)
     {
@@ -31,4 +31,3 @@ public class Owner: Person
         print("Website: \(self.website ?? "No webiste provided")")
     }
 }
-
