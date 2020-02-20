@@ -22,4 +22,10 @@ extension String{
         return emailPredicate.evaluate(with: email)
     }
     
+    func mobileNumberValidation(value: String) -> Bool {
+        let phonePattern = "^\\d{10}$"
+        let phoneTest = NSPredicate(format: "SELF MATCHES %@", phonePattern)
+        let result =  phoneTest.evaluate(with: value)
+        return result
+    }
 }
