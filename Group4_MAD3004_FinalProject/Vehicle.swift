@@ -7,7 +7,19 @@
 //
 
 import Foundation
-
-public class Vehicle{
     
-}
+    public class Vehicle{
+      var vehicleIdentificationNumber: String
+      var vehicleDescription: String
+      var manufacturerName: String
+      init(vehicleIdentificationNumber: String,
+         vehicleDescription: String,
+         manufacturerName: String)
+      {
+        self.vehicleIdentificationNumber = vehicleIdentificationNumber
+        self.vehicleDescription = vehicleDescription
+        self.manufacturerName = manufacturerName
+      }
+    }
+    
+
