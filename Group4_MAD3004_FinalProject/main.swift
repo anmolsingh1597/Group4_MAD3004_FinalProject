@@ -32,10 +32,13 @@ var d2 = Driver(id: 44563, firstName: "DRI_Aman", lastName: "Kaur", gender: .Fem
 
 d2.display()
 
-var o1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil)
+var o1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [Vehicle(vehicleIdentificationNumber: "fgtr54",
+vehicleDescription: "BMX",
+manufacturerName: "BMW"),Vehicle(vehicleIdentificationNumber: "ghty54", vehicleDescription: "Q7", manufacturerName: "Audii")])
 
 o1.display()
 
-var o2 = Owner(id: 54323, firstName: "OWN_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "908765", email: "own_aman@owner.com", userName: "own_aman", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil)
-
+var o2 = Owner(id: 54323, firstName: "OWN_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "908765", email: "own_aman@owner.com", userName: "own_aman", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [])
 o2.display()
+
+
