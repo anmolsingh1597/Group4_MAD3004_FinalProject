@@ -12,7 +12,7 @@ class DataRepo{
     
    static private var repository = DataRepo()
     
-    private lazy var vehicleList : Dictionary <String,Vehicle>()
+    private lazy var vehicleList = Dictionary <String,Vehicle>()
     
     private init()
     {
