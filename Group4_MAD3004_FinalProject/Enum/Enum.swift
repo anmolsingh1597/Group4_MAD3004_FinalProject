@@ -21,5 +21,11 @@ public struct Enum
         case Diesel
         case Electric
     }
+    
+    enum CarType{
+        case SUV
+        case Sedan
+        case Luxury
+    }
 }
 

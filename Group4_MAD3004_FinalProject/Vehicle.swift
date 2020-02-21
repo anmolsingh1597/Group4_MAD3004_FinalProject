@@ -8,21 +8,22 @@
 
 import Foundation
     
-    internal class Vehicle{
+    public class Vehicle{
         var vehicleIdentificationNumber: String
         var vehicleDescription: String
         var manufacturerName: String
         var isSelfDrive: Bool
         //var driver: Driver
         var isInsured: Bool
-        var insuranceProviderName: String
+        //var insuranceProviderName: String
         var noOfSeat: Int
         var fuelType: Enum.FuelType = .Petrol
         var baseRate: Int = 0
         var ratePerKm: Int = 0
       init(vehicleIdentificationNumber: String,
          vehicleDescription: String,
-         manufacturerName: String, isSelfDrive : Bool, isInsured : Bool, noOfSeat : Int, prefixDetails : String, insuranceProviderName : String)
+         manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
+         noOfSeat : Int, fuelType: Enum.FuelType)
       {
         self.vehicleIdentificationNumber = vehicleIdentificationNumber
         self.vehicleDescription = vehicleDescription
@@ -30,7 +31,6 @@ import Foundation
         self.isSelfDrive = isSelfDrive
         self.isInsured = isInsured
         self.noOfSeat = noOfSeat
-        self.insuranceProviderName = insuranceProviderName
       }
     }
     
