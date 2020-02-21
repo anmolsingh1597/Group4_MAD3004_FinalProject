@@ -10,5 +10,17 @@ import Foundation
 
 public class Car
 {
-    
+    var identificationNumber: String
+       var description: String
+       var isSelfDrive: Bool
+       var manufacturerName: String
+       var isInsured: Bool
+       var vehicleNoOfSeats: Int
+       var insuranceProviderName: String
+       var seat: Int
+       var fuelType: String
+       var ratePerDay: Double
+       var ratePerKm: Double
+       var carColor: String
+       var carType: String
 }
