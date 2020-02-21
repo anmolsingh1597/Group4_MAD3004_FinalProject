@@ -8,7 +8,7 @@
 
 import Foundation
     
-    public class Vehicle{
+    internal class Vehicle{
       var vehicleIdentificationNumber: String
          var vehicleDescription: String
          var manufacturerName: String
