@@ -10,7 +10,7 @@ import Foundation
 
 public class Person
 {
-        var id : Int
+         var id : Int
          var firstName : String
          var lastName : String
          var gender : Enum.Gender

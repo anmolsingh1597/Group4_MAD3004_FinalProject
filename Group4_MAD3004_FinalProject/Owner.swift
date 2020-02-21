@@ -14,8 +14,7 @@ public class Owner: Person
   var businessNumber: String?
   var website: String?
   var vehicleList: [Vehicle]
-  var vehicleDictionary = [String: String]()
-   
+  var vehicleDictionary = Dictionary<String,String>()
   init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, companyTitle: String?, businessNumber: String?, website: String?, vehicleList: [Vehicle])
   {
       self.companyTitle = companyTitle
