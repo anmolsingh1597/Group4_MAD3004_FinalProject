@@ -23,10 +23,10 @@ public class Owner: Person
       self.website = website
       self.vehicleList = vehicleList
       super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
-        arrayToHashMap()
+        arrayToDictionary()
     }
     
-    func arrayToHashMap(){
+    func arrayToDictionary(){
             for vehicle in vehicleList  {
                 vehicleDictionary.updateValue(vehicle.vehicleDescription, forKey: vehicle.vehicleIdentificationNumber )
             }
