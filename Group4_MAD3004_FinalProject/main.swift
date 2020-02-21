@@ -8,11 +8,6 @@
 
 import Foundation
 
-let vehicle1 = Vehicle(vehicleIdentificationNumber: "fgtr54",
-vehicleDescription: "BMX",
-manufacturerName: "BMW", isSelfDrive: true, isInsured: true, noOfSeat: 5, prefixDetails: "hj", insuranceProviderName: "gh")
-
-let vehicle2 = Vehicle(vehicleIdentificationNumber: "ghty54", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 1, prefixDetails: "hj", insuranceProviderName: "h")
 
 let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
