@@ -14,7 +14,7 @@ public class Owner: Person
   var businessNumber: String?
   var website: String?
   var vehicleList: [Vehicle]
-  var vehicleDictionary = [String: Vehicle]()
+  var vehicleDictionary = [String: String]()
    
   init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, companyTitle: String?, businessNumber: String?, website: String?, vehicleList: [Vehicle])
   {
@@ -28,7 +28,7 @@ public class Owner: Person
     
     func arrayToHashMap(){
             for vehicle in vehicleList  {
-                vehicleDictionary.updateValue(vehicle, forKey: vehicle.vehicleIdentificationNumber )
+                vehicleDictionary.updateValue(vehicle.vehicleDescription, forKey: vehicle.vehicleIdentificationNumber )
             }
     }
 
@@ -39,7 +39,7 @@ public class Owner: Person
     print("Comapny: \(self.companyTitle ?? "No Company provided")")
     print("Business Number: \(self.businessNumber ?? "No Number provided")")
     print("Website: \(self.website ?? "No webiste provided")")
-    print("Vehicle List: \(self.vehicleList)")
+    print("Vehicle List: \(vehicleDictionary)")
  
   }
 }
