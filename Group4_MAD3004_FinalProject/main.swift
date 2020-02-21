@@ -28,7 +28,7 @@ let driver2 = Driver(id: 44563, firstName: "DRI_Aman", lastName: "Kaur", gender:
 
 driver2.display()
 
-let owner1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [vehicle1,vehicle2])
+let owner1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [car1, car2])
 
 owner1.display()
 
