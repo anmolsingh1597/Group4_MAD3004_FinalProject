@@ -12,27 +12,29 @@ let vehicle1 = Vehicle(vehicleIdentificationNumber: "fgtr54",
 vehicleDescription: "BMX",
 manufacturerName: "BMW", isSelfDrive: true, isInsured: true, noOfSeat: 5, prefixDetails: "hj", insuranceProviderName: "gh", baseRate: 5, ratePerKm: 7)
 
-let c1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
+let vehicle2 = Vehicle(vehicleIdentificationNumber: "ghty54", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 1, prefixDetails: "hj", insuranceProviderName: "h", baseRate: 3, ratePerKm: 4)
 
-c1.display()
+let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
-let c2 = Customer(id: 34789, firstName: "CUS_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8767867", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton")
+customer1.display()
 
-c2.display()
+let customer2 = Customer(id: 34789, firstName: "CUS_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8767867", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton")
 
-let d1 = Driver(id: 44342, firstName: "DRI_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "875422", email: "dri_anmol@driver.com", userName: "dri_anmol", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
+customer2.display()
 
-d1.display()
+let driver1 = Driver(id: 44342, firstName: "DRI_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "875422", email: "dri_anmol@driver.com", userName: "dri_anmol", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
 
-let d2 = Driver(id: 44563, firstName: "DRI_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8743678", email: "dri_aman@driver.com", userName: "dri_aman", password: "hy76t5r", drivingLicenceNumber: "JHYT78654", isDrivingHistoryCleared: true, salary: 9989.90)
+driver1.display()
 
-d2.display()
+let driver2 = Driver(id: 44563, firstName: "DRI_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8743678", email: "dri_aman@driver.com", userName: "dri_aman", password: "hy76t5r", drivingLicenceNumber: "JHYT78654", isDrivingHistoryCleared: true, salary: 9989.90)
 
-let o1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [vehicle1,Vehicle(vehicleIdentificationNumber: "ghty54", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 1, prefixDetails: "hj", insuranceProviderName: "h", baseRate: 3, ratePerKm: 4)])
+driver2.display()
 
-o1.display()
+let owner1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [vehicle1,vehicle2])
 
-let o2 = Owner(id: 54323, firstName: "OWN_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "908765", email: "own_aman@owner.com", userName: "own_aman", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [])
-o2.display()
+owner1.display()
+
+let owner2 = Owner(id: 54323, firstName: "OWN_Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "908765", email: "own_aman@owner.com", userName: "own_aman", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [])
+owner2.display()
 
 
