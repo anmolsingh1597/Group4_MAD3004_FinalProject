@@ -28,7 +28,6 @@ import Foundation
         self.vehicleDescription = vehicleDescription
         self.manufacturerName = manufacturerName
         self.isSelfDrive = isSelfDrive
-        
         self.isInsured = isInsured
         self.noOfSeat = noOfSeat
         self.insuranceProviderName = insuranceProviderName
