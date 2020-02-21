@@ -10,5 +10,15 @@ import Foundation
 
 public class Motorcycle
 {
+    var maxTopSpeed: Float
+    var milage: Float
     
+    init(vehicleIdentificationNumber: String,
+    vehicleDescription: String,
+    manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
+    noOfSeat : Int, fuelType: Enum.FuelType, maxTopSpeed: Float, milage: Float) {
+        self.maxTopSpeed = maxTopSpeed
+        self.milage = milage
+        su
+    }
 }
