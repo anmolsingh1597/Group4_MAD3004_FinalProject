@@ -24,4 +24,22 @@ public class Bus
     var busType: String
     var iswifiAvailable: Bool
     var isAccessibiltyServiceAvailable: Bool
+    
+    init(identificationNumber: String, description: String, isSelfDrive: Bool, manufacturerName: String, isInsured: Bool, vehicleNoOfSeats: Int, insuranceProviderName: String, seat: Int, fuelType: String, ratePerDay: Double, ratePerKm: Double, busType : String , iswifiAvailable : Bool, isAccessibiltyServiceAvailable: Bool)
+    {
+        self.identificationNumber = identificationNumber
+        self.description = description
+        self.isSelfDrive = isSelfDrive
+        self.manufacturerName = manufacturerName
+        self.isInsured = isInsured
+        self.vehicleNoOfSeats = vehicleNoOfSeats
+        self.insuranceProviderName = insuranceProviderName
+        self.seat = seat
+        self.fuelType = fuelType
+        self.ratePerDay = ratePerDay
+        self.ratePerKm = ratePerKm
+        self.busType = busType
+        self.iswifiAvailable = iswifiAvailable
+    self.isAccessibiltyServiceAvailable = isAccessibiltyServiceAvailable
+}
 }
