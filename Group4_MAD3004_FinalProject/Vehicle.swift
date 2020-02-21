@@ -13,28 +13,25 @@ import Foundation
         var vehicleDescription: String
         var manufacturerName: String
         var isSelfDrive: Bool
-        var driver: Driver
+        //var driver: Driver
         var isInsured: Bool
         var insuranceProviderName: String
         var noOfSeat: Int
-        var fuelType: Enum.FuelType
-        
-         var baseRate: Int
-         var ratePerKm: Int
+        var fuelType: Enum.FuelType = .Petrol
+        var baseRate: Int = 0
+        var ratePerKm: Int = 0
       init(vehicleIdentificationNumber: String,
          vehicleDescription: String,
-         manufacturerName: String, isSelfDrive : Bool, isInsured : Bool, noOfSeat : Int, prefixDetails : String, insuranceProviderName : String, baseRate : Int, ratePerKm : Int)
+         manufacturerName: String, isSelfDrive : Bool, isInsured : Bool, noOfSeat : Int, prefixDetails : String, insuranceProviderName : String)
       {
         self.vehicleIdentificationNumber = vehicleIdentificationNumber
         self.vehicleDescription = vehicleDescription
         self.manufacturerName = manufacturerName
         self.isSelfDrive = isSelfDrive
+        
         self.isInsured = isInsured
         self.noOfSeat = noOfSeat
-        self.prefixDetails = prefixDetails
         self.insuranceProviderName = insuranceProviderName
-        self.baseRate = baseRate
-        self.ratePerKm = ratePerKm
       }
     }
     
