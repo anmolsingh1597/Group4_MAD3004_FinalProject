@@ -8,6 +8,10 @@
 
 import Foundation
 
+let vehicle1 = Vehicle(vehicleIdentificationNumber: "fgtr54",
+vehicleDescription: "BMX",
+manufacturerName: "BMW", isSelfDrive: true, isInsured: true, noOfSeat: 5, prefixDetails: "hj", insuranceProviderName: "gh", baseRate: 5, ratePerKm: 7)
+
 var p1 = Person(id: 24500, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "87878788", email: "me@me.com", userName: "Me_Anmol", password: "DFRGFDF")
 
 p1.display()
@@ -32,9 +36,7 @@ var d2 = Driver(id: 44563, firstName: "DRI_Aman", lastName: "Kaur", gender: .Fem
 
 d2.display()
 
-var o1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [Vehicle(vehicleIdentificationNumber: "fgtr54",
-vehicleDescription: "BMX",
-manufacturerName: "BMW", isSelfDrive: true, isInsured: true, noOfSeat: 5, prefixDetails: "hj", insuranceProviderName: "gh", baseRate: 5, ratePerKm: 7),Vehicle(vehicleIdentificationNumber: "ghty54", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 1, prefixDetails: "hj", insuranceProviderName: "h", baseRate: 3, ratePerKm: 4)])
+var o1 = Owner(id: 54675, firstName: "OWN_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [vehicle1,Vehicle(vehicleIdentificationNumber: "ghty54", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 1, prefixDetails: "hj", insuranceProviderName: "h", baseRate: 3, ratePerKm: 4)])
 
 o1.display()
 
