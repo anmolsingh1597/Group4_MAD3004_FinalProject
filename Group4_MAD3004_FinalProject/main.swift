@@ -12,14 +12,6 @@ let vehicle1 = Vehicle(vehicleIdentificationNumber: "fgtr54",
 vehicleDescription: "BMX",
 manufacturerName: "BMW", isSelfDrive: true, isInsured: true, noOfSeat: 5, prefixDetails: "hj", insuranceProviderName: "gh", baseRate: 5, ratePerKm: 7)
 
-let p1 = Person(id: 24500, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "87878788", email: "me@me.com", userName: "Me_Anmol", password: "DFRGFDF")
-
-p1.display()
-
-let p2 = Person(id: 24566, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8767543", email: "me_aman@me.com", userName: "Me_Aman", password: "hgjfkhs")
-
-p2.display()
-
 let c1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
 c1.display()
