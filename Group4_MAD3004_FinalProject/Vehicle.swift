@@ -9,14 +9,16 @@
 import Foundation
     
     internal class Vehicle{
-      var vehicleIdentificationNumber: String
-         var vehicleDescription: String
-         var manufacturerName: String
-         var isSelfDrive: Bool
-         var isInsured: Bool
-         var noOfSeat: Int
-         var prefixDetails: String
-         var insuranceProviderName: String
+        var vehicleIdentificationNumber: String
+        var vehicleDescription: String
+        var manufacturerName: String
+        var isSelfDrive: Bool
+        var driver: Driver
+        var isInsured: Bool
+        var insuranceProviderName: String
+        var noOfSeat: Int
+        var fuelType: Enum.FuelType
+        
          var baseRate: Int
          var ratePerKm: Int
       init(vehicleIdentificationNumber: String,

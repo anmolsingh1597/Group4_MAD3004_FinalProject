@@ -15,5 +15,11 @@ public struct Enum
         case Female
         case Other
     }
+    
+    enum FuelType{
+        case Petrol
+        case Diesel
+        case Electric
+    }
 }
 
