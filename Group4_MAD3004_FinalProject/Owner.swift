@@ -27,7 +27,7 @@ public class Owner: Person
     
     func arrayToDictionary(){
             for vehicle in vehicleList  {
-                vehicleDictionary.updateValue(vehicle.vehicleDescription, forKey: vehicle.vehicleIdentificationNumber )
+                vehicleDictionary.updateValue(vehicle.manufacturerName+" "+vehicle.vehicleDescription, forKey: vehicle.vehicleIdentificationNumber )
             }
     }
 
