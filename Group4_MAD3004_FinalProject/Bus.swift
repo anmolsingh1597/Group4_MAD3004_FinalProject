@@ -8,9 +8,21 @@
 
 import Foundation
 
-public class Bus
+public class Bus: Vehicle
 {
- var typeOfBus (Mini, Volvo, etc.)
-    -isAccessibilityServiceavailable
-    - is Wifi Available
+    var typeOfBus: Enum.BusType
+    var isAccessibilityServiceavailable: Bool
+    var isWifiAvailable: Bool
+    
+    init(vehicleIdentificationNumber: String,
+      vehicleDescription: String,
+      manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
+      noOfSeat : Int, fuelType: Enum.FuelType, typeOfBus: Enum.BusType,
+      isAccessibilityServiceavailable: Bool,
+      isWifiAvailable: Bool) {
+        self.typeOfBus = typeOfBus
+        self.isAccessibilityServiceavailable = isAccessibilityServiceavailable
+        self.isWifiAvailable = isWifiAvailable
+        super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
+      }
 }
