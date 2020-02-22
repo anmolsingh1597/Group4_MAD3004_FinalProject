@@ -34,6 +34,10 @@ public class Vehicle: DisplayDelegate
         self.noOfSeat = noOfSeat
       }
         
+    func display() {
+        print("-----Vehicle-----")
+        
+    }
     }
     
 
