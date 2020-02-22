@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Motorcycle
+public class Motorcycle: Vehicle
 {
     var maxTopSpeed: Float
     var milage: Float
@@ -19,6 +19,6 @@ public class Motorcycle
     noOfSeat : Int, fuelType: Enum.FuelType, maxTopSpeed: Float, milage: Float) {
         self.maxTopSpeed = maxTopSpeed
         self.milage = milage
-        su
+        super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
     }
 }
