@@ -33,6 +33,25 @@ extension String{
         }
         
         return "Invalid Mobile Number"
-      
     }
+//    func testEnc() throws {
+//
+//        let ivKey = "tEi1H3E1aj26XNro"
+//        let message = "Test Message"
+//        let password = "pass123"
+//
+//        let aesKey = password.padding(toLength: 32, withPad: "0", startingAt: 0)
+//
+//        do {
+//            let messageArray = Array(message.utf8)
+//            let encrypted = try AES(key: aesKey, iv: ivKey, blockMode: .CBC, padding: .pkcs7).encrypt(messageArray)
+//            let encryptedString = String.init(bytes: encrypted, encoding: .utf8)
+//            let decrypted = try AES(key: aesKey, iv: ivKey, blockMode: .CBC, padding: .pkcs7).decrypt(encrypted)
+//            let decryptedString = String.init(bytes: decrypted, encoding: .utf8)
+//            assert(message == decryptedString)
+//        } catch {
+//            print(error)
+//        }
+//    }
+//    
 }

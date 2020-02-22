@@ -8,10 +8,6 @@
 
 import Foundation
 
-let driver1 = Driver(id: 44342, firstName: "Ikroop", lastName: "Virk", gender: .Female, birthDate: Date.from(year: 1995, month: 04, day: 21) ?? Date(), mobileNumber: "8754335522", email: "dri_ikroop@driver.com", userName: "dri_ikroop", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
-
-driver1.display()
-
 let car1 = Car(vehicleIdentificationNumber: "1GNSKJE71ER220790", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, /*driver: driver1,*/ isInsured: true, noOfSeat: 4, fuelType: .Diesel, carType: .Luxury, carColor: "Beautiful")
 
 //car1.display()
@@ -44,7 +40,9 @@ let customer2 = Customer(id: 34789, firstName: "Aman", lastName: "Kaur", gender:
 
 customer2.display()
 
+let driver1 = Driver(id: 44342, firstName: "Ikroop", lastName: "Virk", gender: .Female, birthDate: Date.from(year: 1995, month: 04, day: 21) ?? Date(), mobileNumber: "8754335522", email: "dri_ikroop@driver.com", userName: "dri_ikroop", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
 
+driver1.display()
 
 let driver2 = Driver(id: 44563, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "8743673538", email: "dri_aman@driver.com", userName: "dri_aman", password: "hy76t5r", drivingLicenceNumber: "JHYT78654", isDrivingHistoryCleared: true, salary: 9989.90)
 
