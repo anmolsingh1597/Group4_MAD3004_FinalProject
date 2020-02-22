@@ -43,8 +43,8 @@ public class Vehicle: DisplayDelegate
         print("Insurance: \(self.isInsured)")
         print("Seats: \(self.noOfSeat)")
         print("Fuel Type: \(self.fuelType)")
-      
-
+        print("Base Rate: \(self.baseRate)")
+        print("Rate per Km: \(self.ratePerKm)")
     }
     }
     
