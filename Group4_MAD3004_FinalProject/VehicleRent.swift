@@ -16,13 +16,26 @@ public class VehicleRent : DisplayDelegate
     var noOfDays: Int = 0
     var vehicle: Vehicle
     var noOfKmDrived: Float
-  //  var total bill to pay (base + (km * rate))
+    var totalBill: Double = 0.0
     
     init(rentStartDate: Date, rentEndDate: Date, vehicle: Vehicle, noOfKmDrived: Float) {
         self.rentStartDate = rentStartDate
         self.rentEndDate = rentEndDate
         self.vehicle = vehicle
         self.noOfKmDrived = noOfKmDrived
+    }
+    
+    func totalBillToPay(){
+        switch vehicle.baseRate {
+        case 100:
+            totalBill = Double(100*self.noOfDays) + Double(5*self.noOfKmDrived)
+        case 50:
+            totalBill = Double(50*self.noOfDays) + Double(1*self.noOfKmDrived)
+        case 250:
+            totalBill = Double(250*self.noOfDays) + Double(7*self.noOfKmDrived)
+        default:
+            totalBill = 0.0
+        }
     }
     
     func display() {
