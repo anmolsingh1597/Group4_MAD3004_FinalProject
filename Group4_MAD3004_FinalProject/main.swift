@@ -14,6 +14,8 @@ car1.display()
 
 let car2 = Car(vehicleIdentificationNumber: "JKH675", vehicleDescription: "Odyssey", manufacturerName: "Honda", isSelfDrive: true, isInsured: false, noOfSeat: 6, fuelType: .Electric, carType: .SUV, carColor: "Not so Beautiful")
 
+car2.display()
+
 let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
 customer1.display()
