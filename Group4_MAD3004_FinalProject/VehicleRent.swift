@@ -15,10 +15,10 @@ public class VehicleRent : DisplayDelegate
     var rentEndDate: Date
     var noOfDays: Int = 0
     var vehicle: Vehicle
-    var noOfKmDrived: Float
+    var noOfKmDrived: Double
     var totalBill: Double = 0.0
     
-    init(rentStartDate: Date, rentEndDate: Date, vehicle: Vehicle, noOfKmDrived: Float) {
+    init(rentStartDate: Date, rentEndDate: Date, vehicle: Vehicle, noOfKmDrived: Double) {
         self.rentStartDate = rentStartDate
         self.rentEndDate = rentEndDate
         self.vehicle = vehicle
@@ -42,8 +42,11 @@ public class VehicleRent : DisplayDelegate
     }
     
     func display() {
-        print(self.noOfDays)
-        print(self.vehicle.manufacturerName)
-        print(totalBillToPay().getFormattedAmount())
+        print("Rent Start Date: \(self.rentStartDate.getFormattedDate())")
+        print("Rent End Date: \(self.rentEndDate.getFormattedDate())")
+        print("No of Days: \(self.noOfDays)")
+        print("Vehicle: \(self.vehicle.manufacturerName+" "+self.vehicle.vehicleDescription)")
+        print("No of Km drove: \(self.noOfKmDrived.concatKm())")
+        print("Total Bill: \(totalBillToPay().getFormattedAmount())")
     }
 }

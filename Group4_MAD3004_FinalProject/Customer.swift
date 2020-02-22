@@ -25,10 +25,11 @@ public class Customer: Person
     }
     
     override func display() {
-          print("-----Customer-----")
+        print("-----Customer-----")
         print("Id: \(self.id.concatCustomerPrefix())")
-          super.display()
-          print("Adress: \(self.address ?? "No address provided")")
-          print("City: \(self.city ?? "No city provided")")
+        super.display()
+        print("Adress: \(self.address ?? "No address provided")")
+        print("City: \(self.city ?? "No city provided")")
+        vehicleRent.display()
       }
 }

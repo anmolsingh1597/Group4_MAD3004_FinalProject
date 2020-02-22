@@ -13,4 +13,9 @@ extension Double{
 {
       return String(format: "$%0.2f", Double(self))
 }
+func concatKm() -> String
+{
+        return "\(self) Km"
+}
+       
 }
