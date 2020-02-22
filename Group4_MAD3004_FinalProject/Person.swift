@@ -44,7 +44,6 @@ public class Person: DisplayDelegate
         print("-----Person-----")
         print("Id: \(self.id)")
         print("Name: \(firstName.fullName(lastName: self.lastName))")
-        //print("Last Name: \(self.lastName)")
         print("Gender: \(self.gender)")
           if let d = self.birthDate{
              print("Birthdate: \(d)")
