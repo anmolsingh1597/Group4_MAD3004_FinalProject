@@ -25,7 +25,7 @@ public class VehicleRent : DisplayDelegate
         self.noOfKmDrived = noOfKmDrived
     }
     
-    func totalBillToPay(){
+    func totalBillToPay() -> Double {
         switch vehicle.baseRate {
         case 100:
             totalBill = Double(100*self.noOfDays) + Double(5*self.noOfKmDrived)
@@ -36,6 +36,8 @@ public class VehicleRent : DisplayDelegate
         default:
             totalBill = 0.0
         }
+        
+        return totalBill
     }
     
     func display() {
