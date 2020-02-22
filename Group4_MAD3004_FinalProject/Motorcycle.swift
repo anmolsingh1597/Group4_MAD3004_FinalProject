@@ -21,6 +21,11 @@ public class Motorcycle: Vehicle
         self.milage = milage
         super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
     }
+    override func valueAssigner() {
+         super.baseRate = 50
+         super.ratePerKm = 1
+     }
+    
     override func display() {
         print("-----Motorcycle-----")
         super.display()
