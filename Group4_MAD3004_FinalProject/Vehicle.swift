@@ -8,7 +8,8 @@
 
 import Foundation
     
-    public class Vehicle{
+public class Vehicle: DisplayDelegate
+{
         var vehicleIdentificationNumber: String
         var vehicleDescription: String
         var manufacturerName: String
@@ -32,6 +33,7 @@ import Foundation
         self.isInsured = isInsured
         self.noOfSeat = noOfSeat
       }
+        
     }
     
 

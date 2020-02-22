@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Person
+public class Person: DisplayDelegate
 {
          var id : Int
          var firstName : String
