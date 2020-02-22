@@ -25,4 +25,11 @@ public class Bus: Vehicle
         self.isWifiAvailable = isWifiAvailable
         super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
       }
+    override func display() {
+        print("-----Bus-----")
+        super.display()
+        print("Bus Type: \(self.typeOfBus)")
+        print("Accessibility Service: \(self.isAccessibilityServiceavailable)")
+        print("Wifi: \(self.isWifiAvailable)")
+      }
 }
