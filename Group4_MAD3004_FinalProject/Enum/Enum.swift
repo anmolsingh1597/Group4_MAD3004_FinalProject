@@ -27,5 +27,11 @@ public struct Enum
         case Sedan
         case Luxury
     }
+    
+    enum BusType{
+        case Mini
+        case Volvo
+        case DoubleDecker
+    }
 }
 
