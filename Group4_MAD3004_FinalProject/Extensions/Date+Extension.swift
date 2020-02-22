@@ -32,4 +32,15 @@ extension Date
         return Calendar.current.dateComponents([.day], from: start, to: end).day!
     }
     
+    public func ageCalculator() -> Int
+    {
+    let now = Date()
+    let calendar = Calendar.current
+
+    let ageComponents = calendar.dateComponents([.year], from: self, to: now)
+    let age = ageComponents.year
+        
+        return age ?? 0
+    }
+    
 }

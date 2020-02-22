@@ -32,11 +32,11 @@ let bus2 = Bus(vehicleIdentificationNumber: "3B7HC13Y21G293804", vehicleDescript
 
 bus2.display()
 
-let customer1 = Customer(id: 34786, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
+let customer1 = Customer(id: 34786, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date.from(year: 1997, month: 11, day: 15) ?? Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
 customer1.display()
 
-let customer2 = Customer(id: 34789, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date(), mobileNumber: "8767867", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton")
+let customer2 = Customer(id: 34789, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "8767867", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton")
 
 customer2.display()
 

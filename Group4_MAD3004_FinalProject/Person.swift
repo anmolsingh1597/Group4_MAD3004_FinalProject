@@ -18,9 +18,7 @@ public class Person: DisplayDelegate
         
          let now = Date()
          
-         var age: Int{
-             return 0
-         }
+         var age: Int = 0
          var mobileNumber : String
          var emailId : String
          var userName : String
@@ -46,8 +44,8 @@ public class Person: DisplayDelegate
         print("Name: \(firstName.fullName(lastName: self.lastName))")
         print("Gender: \(self.gender)")
           if let d = self.birthDate{
-             print("Birthdate: \(d)")
-             print("Age: \(self.age)")
+            print("Birthdate: \(d.getFormattedDate())")
+            print("Age: \(d.ageCalculator())")
              }else{
                  print("No Birthdate Found")
              }
