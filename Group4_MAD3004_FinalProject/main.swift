@@ -24,6 +24,9 @@ let motorcycle2 = Motorcycle(vehicleIdentificationNumber: "WBABN53492JU83746", v
 
 motorcycle2.display()
 
+let bus1 = Bus(vehicleIdentificationNumber: "SAJWA71B38SH40405", vehicleDescription: "Volvo", manufacturerName: "Mercedes", isSelfDrive: false, isInsured: true, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Volvo, isAccessibilityServiceavailable: true, isWifiAvailable: true)
+
+
 let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
 customer1.display()
