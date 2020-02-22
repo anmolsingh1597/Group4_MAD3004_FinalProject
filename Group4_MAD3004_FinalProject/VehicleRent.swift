@@ -42,8 +42,8 @@ public class VehicleRent : DisplayDelegate
     }
     
     func display() {
-        print()
+        print(self.noOfDays)
         print(self.vehicle.manufacturerName)
-        print(totalBillToPay())
+        print(totalBillToPay().getFormattedAmount())
     }
 }
