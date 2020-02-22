@@ -13,6 +13,7 @@ public class VehicleRent
 {
     var rentStartDate: Date
     var rentEndDate: Date
+    var noOfDays: Int = 0
     var vehicle: Vehicle
     var noOfKmDrived: Float
   //  var total bill to pay (base + (km * rate))
@@ -20,6 +21,7 @@ public class VehicleRent
     init(rentStartDate: Date, rentEndDate: Date, vehicle: Vehicle, noOfKmDrived: Float) {
         self.rentStartDate = rentStartDate
         self.rentEndDate = rentEndDate
+        self.noOfDays.daysBetween(start: self.rentStartDate, end: self.rentEndDate)
         self.vehicle = vehicle
         self.noOfKmDrived = noOfKmDrived
     }
