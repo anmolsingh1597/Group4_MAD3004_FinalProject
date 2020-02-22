@@ -36,7 +36,8 @@ public class Vehicle: DisplayDelegate
         
     func display() {
         print("-----Vehicle-----")
-        
+        print("VIN: \(self.vehicleIdentificationNumber)")
+        print(<#T##items: Any...##Any#>)
     }
     }
     
