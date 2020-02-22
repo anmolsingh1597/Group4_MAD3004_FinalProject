@@ -43,8 +43,8 @@ public class Person: DisplayDelegate
     func display() {
         print("-----Person-----")
         print("Id: \(self.id)")
-        print("First Name: \(self.firstName )")
-        print("Last Name: \(self.lastName)")
+        print("Name: \(firstName.fullName(lastName: self.lastName))")
+        //print("Last Name: \(self.lastName)")
         print("Gender: \(self.gender)")
           if let d = self.birthDate{
              print("Birthdate: \(d)")

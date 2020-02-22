@@ -10,9 +10,9 @@ import Foundation
 
 extension String{
 
-    func fullName(firstName:String, lastName: String) -> String
+    func fullName(lastName: String) -> String
     {
-        return "\(firstName) \(lastName)"
+        return "\(self) \(lastName)"
     }
     
     func emailValidation(email: String) -> Bool {

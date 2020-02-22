@@ -21,6 +21,7 @@ public class Vehicle: DisplayDelegate
         var fuelType: Enum.FuelType = .Petrol
         var baseRate: Int = 0
         var ratePerKm: Int = 0
+    
       init(vehicleIdentificationNumber: String,
          vehicleDescription: String,
          manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
