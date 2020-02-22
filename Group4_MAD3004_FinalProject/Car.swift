@@ -15,13 +15,13 @@ public class Car: Vehicle
     
     init(vehicleIdentificationNumber: String,
     vehicleDescription: String,
-    manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
+    manufacturerName: String, isSelfDrive : Bool,/* driver: Driver,*/ isInsured : Bool,
     noOfSeat : Int, fuelType: Enum.FuelType, carType: Enum.CarType,
     carColor: String)
     {
         self.carType = carType
         self.carColor = carColor
-        super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
+        super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, /*driver: driver,*/ isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
     }
     
     override func valueAssigner() {

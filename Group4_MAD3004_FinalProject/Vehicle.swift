@@ -14,7 +14,7 @@ public class Vehicle: DisplayDelegate
         var vehicleDescription: String
         var manufacturerName: String
         var isSelfDrive: Bool
-        //var driver: Driver
+        //var driver: Driver = Driver()
         var isInsured: Bool
         //var insuranceProviderName: String
         var noOfSeat: Int
@@ -24,13 +24,16 @@ public class Vehicle: DisplayDelegate
     
       init(vehicleIdentificationNumber: String,
          vehicleDescription: String,
-         manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
+         manufacturerName: String, isSelfDrive : Bool,/*driver: Driver,*/ isInsured : Bool,
          noOfSeat : Int, fuelType: Enum.FuelType)
       {
         self.vehicleIdentificationNumber = vehicleIdentificationNumber
         self.vehicleDescription = vehicleDescription
         self.manufacturerName = manufacturerName
         self.isSelfDrive = isSelfDrive
+       /* if self.isSelfDrive == false{
+            self.driver = driver
+        }*/
         self.isInsured = isInsured
         self.noOfSeat = noOfSeat
         valueAssigner()
