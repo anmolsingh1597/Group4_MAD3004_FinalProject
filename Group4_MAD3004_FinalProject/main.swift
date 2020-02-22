@@ -20,6 +20,10 @@ let motorcycle1 = Motorcycle(vehicleIdentificationNumber: "3VW2K7AJ7FM381660", v
 
 motorcycle1.display()
 
+let motorcycle2 = Motorcycle(vehicleIdentificationNumber: "WBABN53492JU83746", vehicleDescription: "Enfield", manufacturerName: "Royal", isSelfDrive: true, isInsured: true, noOfSeat: 2, fuelType: .Petrol, maxTopSpeed: 65.6, milage: 24.5)
+
+motorcycle2.display()
+
 let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
 customer1.display()
