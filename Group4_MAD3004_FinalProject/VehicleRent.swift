@@ -11,5 +11,16 @@ import Foundation
 
 public class VehicleRent
 {
+    var rentStartDate: Date
+    var rentEndDate: Date
+    var vehicle: Vehicle
+    var noOfKmDrived: Float
+  //  var total bill to pay (base + (km * rate))
     
+    init(rentStartDate: Date, rentEndDate: Date, vehicle: Vehicle, noOfKmDrived: Float) {
+        self.rentStartDate = rentStartDate
+        self.rentEndDate = rentEndDate
+        self.vehicle = vehicle
+        self.noOfKmDrived = noOfKmDrived
+    }
 }
