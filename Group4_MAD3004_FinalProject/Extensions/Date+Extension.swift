@@ -18,4 +18,14 @@ extension Date
         let formattedDate = dateFormatterPrint.string(from: self)
         return formattedDate
     }
+    
+    static func from(year: Int, month: Int, day: Int) -> Date? {
+        let calender = Calendar(identifier: .gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        return calender.date(from: dateComponents) ?? nil
+    }
+
 }
