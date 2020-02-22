@@ -27,5 +27,6 @@ public class VehicleRent : DisplayDelegate
     
     func display() {
         print(self.noOfDays.daysBetween(start: self.rentStartDate, end: self.rentEndDate))
+        print(self.vehicle.manufacturerName)
     }
 }
