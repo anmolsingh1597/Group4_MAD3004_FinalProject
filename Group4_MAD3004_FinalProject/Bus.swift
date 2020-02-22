@@ -25,6 +25,12 @@ public class Bus: Vehicle
         self.isWifiAvailable = isWifiAvailable
         super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
       }
+    
+    override func valueAssigner() {
+         super.baseRate = 250
+         super.ratePerKm = 7
+     }
+    
     override func display() {
         print("-----Bus-----")
         super.display()
