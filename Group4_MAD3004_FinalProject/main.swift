@@ -36,9 +36,9 @@ let customer1 = Customer(id: 34786, firstName: "Anmol", lastName: "Singh", gende
 
 customer1.display()
 
-//let customer2 = Customer(id: 34789, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "87678353367", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton", vehicleRent: )
+let customer2 = Customer(id: 34789, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "87678353367", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton", vehicleRent: VehicleRent(rentStartDate: Date.from(year: 2020, month: 01, day: 21) ?? Date(), rentEndDate: Date.from(year: 2020, month: 02, day: 03) ?? Date(), vehicle: bus2, noOfKmDrived: 5) )
 
-//customer2.display()
+customer2.display()
 
 let driver1 = Driver(id: 44342, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date.from(year: 1997, month: 11, day: 15) ?? Date(), mobileNumber: "8754335522", email: "dri_anmol@driver.com", userName: "dri_anmol", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
 
