@@ -28,4 +28,8 @@ extension Date
         return calender.date(from: dateComponents) ?? nil
     }
 
+    public static func daysBetween(start: Date, end: Date) -> Int {
+        return Calendar.current.dateComponents([.day], from: start, to: end).day!
+    }
+    
 }
