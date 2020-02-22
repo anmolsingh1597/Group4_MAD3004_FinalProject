@@ -34,6 +34,7 @@ public class Owner: Person
   override func display() {
    
     print("-----Owner-----")
+    print("Id: \(self.id.concatOwnerPrefix())")
     super.display()
     print("Comapny: \(self.companyTitle ?? "No Company provided")")
     print("Business Number: \(self.businessNumber ?? "No Number provided")")
