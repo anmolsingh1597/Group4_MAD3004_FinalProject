@@ -37,7 +37,14 @@ public class Vehicle: DisplayDelegate
     func display() {
         print("-----Vehicle-----")
         print("VIN: \(self.vehicleIdentificationNumber)")
-        print(<#T##items: Any...##Any#>)
+        print("Vehicle Description: \(self.vehicleDescription)")
+        print("Manufacturer Name: \(self.manufacturerName)")
+        print("Self Drive: \(self.isSelfDrive)")
+        print("Insurance: \(self.isInsured)")
+        print("Seats: \(self.noOfSeat)")
+        print("Fuel Type: \(self.fuelType)")
+      
+
     }
     }
     
