@@ -23,12 +23,13 @@ public class VehicleRent : DisplayDelegate
         self.rentEndDate = rentEndDate
         self.vehicle = vehicle
         self.noOfKmDrived = noOfKmDrived
+        self.noOfDays=self.noOfDays.daysBetween(start: self.rentStartDate, end: self.rentEndDate)
     }
     
     func totalBillToPay() -> Double {
         switch vehicle.baseRate {
         case 100:
-            totalBill = Double(100*self.noOfDays) + Double(5*self.noOfKmDrived)
+            totalBill = Double(100*self.noOfDays)+Double(5*self.noOfKmDrived)
         case 50:
             totalBill = Double(50*self.noOfDays) + Double(1*self.noOfKmDrived)
         case 250:
@@ -41,7 +42,8 @@ public class VehicleRent : DisplayDelegate
     }
     
     func display() {
-        print(self.noOfDays.daysBetween(start: self.rentStartDate, end: self.rentEndDate))
+        print()
         print(self.vehicle.manufacturerName)
+        print(totalBillToPay())
     }
 }

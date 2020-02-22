@@ -56,6 +56,6 @@ let owner2 = Owner(id: 54323, firstName: "Aman", lastName: "Kaur", gender: .Fema
 
 owner2.display()
 
-let vr1 = VehicleRent(rentStartDate: Date.from(year: 2020, month: 02, day: 22) ?? Date(), rentEndDate: Date.from(year: 2020, month: 03, day: 01) ?? Date(), vehicle: car1, noOfKmDrived: 78.9)
+let vr1 = VehicleRent(rentStartDate: Date.from(year: 2020, month: 02, day: 22) ?? Date(), rentEndDate: Date.from(year: 2020, month: 03, day: 01) ?? Date(), vehicle: car1, noOfKmDrived: 5)
 
 vr1.display()

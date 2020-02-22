@@ -33,9 +33,17 @@ public class Vehicle: DisplayDelegate
         self.isSelfDrive = isSelfDrive
         self.isInsured = isInsured
         self.noOfSeat = noOfSeat
+        valueAssigner()
       }
+    
+    func valueAssigner()
+    {
+        self.baseRate = 0
+        self.ratePerKm = 0
+    }
         
     func display() {
+        //valueAssigner()
         print("-----Vehicle-----")
         print("VIN: \(self.vehicleIdentificationNumber)")
         print("Vehicle Description: \(self.vehicleDescription)")

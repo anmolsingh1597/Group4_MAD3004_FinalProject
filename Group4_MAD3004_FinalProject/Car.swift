@@ -23,6 +23,12 @@ public class Car: Vehicle
         self.carColor = carColor
         super.init(vehicleIdentificationNumber: vehicleIdentificationNumber, vehicleDescription: vehicleDescription, manufacturerName: manufacturerName, isSelfDrive: isSelfDrive, isInsured: isInsured, noOfSeat: noOfSeat, fuelType: fuelType)
     }
+    
+    override func valueAssigner() {
+        super.baseRate = 100
+        super.ratePerKm = 5
+    }
+    
     override func display() {
         print("-----Car-----")
         super.display()
