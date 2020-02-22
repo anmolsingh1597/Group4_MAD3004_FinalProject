@@ -10,17 +10,17 @@ import Foundation
     
 public class Vehicle: DisplayDelegate
 {
-        var vehicleIdentificationNumber: String
-        var vehicleDescription: String
-        var manufacturerName: String
-        var isSelfDrive: Bool
-        //var driver: Driver = Driver()
-        var isInsured: Bool
-        //var insuranceProviderName: String
-        var noOfSeat: Int
-        var fuelType: Enum.FuelType = .Petrol
-        var baseRate: Int = 0
-        var ratePerKm: Int = 0
+    var vehicleIdentificationNumber: String
+    var vehicleDescription: String
+    var manufacturerName: String
+    var isSelfDrive: Bool
+    var driverName: String?
+    var isInsured: Bool
+    var insuranceProviderName: String?
+    var noOfSeat: Int
+    var fuelType: Enum.FuelType = .Petrol
+    var baseRate: Int = 0
+    var ratePerKm: Int = 0
     
       init(vehicleIdentificationNumber: String,
          vehicleDescription: String,
@@ -31,10 +31,14 @@ public class Vehicle: DisplayDelegate
         self.vehicleDescription = vehicleDescription
         self.manufacturerName = manufacturerName
         self.isSelfDrive = isSelfDrive
-       /* if self.isSelfDrive == false{
-            self.driver = driver
-        }*/
+        if self.isSelfDrive == false{
+            let name = readLine()!
+            self.driverName = name
+        }
         self.isInsured = isInsured
+        if self.isInsured == true{
+            self.insuranceProviderName = readLine()!
+        }
         self.noOfSeat = noOfSeat
         valueAssigner()
       }
@@ -52,7 +56,9 @@ public class Vehicle: DisplayDelegate
         print("Vehicle Description: \(self.vehicleDescription)")
         print("Manufacturer Name: \(self.manufacturerName)")
         print("Self Drive: \(self.isSelfDrive)")
+        print("Driver Name: \(self.driverName ?? nil)")
         print("Insurance: \(self.isInsured)")
+        print("Insurance Provider Name: \(self.insuranceProviderName ?? nil)")
         print("Seats: \(self.noOfSeat)")
         print("Fuel Type: \(self.fuelType)")
         print("Base Rate: \(self.baseRate)")
