@@ -8,13 +8,17 @@
 
 import Foundation
 
-let car1 = Car(vehicleIdentificationNumber: "LXF456", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 4, fuelType: .Diesel, carType: .Luxury, carColor: "Beautiful")
+let car1 = Car(vehicleIdentificationNumber: "1GNSKJE71ER220790", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, isInsured: true, noOfSeat: 4, fuelType: .Diesel, carType: .Luxury, carColor: "Beautiful")
 
 car1.display()
 
-let car2 = Car(vehicleIdentificationNumber: "JKH675", vehicleDescription: "Odyssey", manufacturerName: "Honda", isSelfDrive: true, isInsured: false, noOfSeat: 6, fuelType: .Electric, carType: .SUV, carColor: "Not so Beautiful")
+let car2 = Car(vehicleIdentificationNumber: "1XP5DB9X8YN539999", vehicleDescription: "Odyssey", manufacturerName: "Honda", isSelfDrive: true, isInsured: false, noOfSeat: 6, fuelType: .Electric, carType: .SUV, carColor: "Not so Beautiful")
 
 car2.display()
+
+let motorcycle1 = Motorcycle(vehicleIdentificationNumber: "3VW2K7AJ7FM381660", vehicleDescription: "BMX", manufacturerName: "BMW", isSelfDrive: true, isInsured: true, noOfSeat: 2, fuelType: .Petrol, maxTopSpeed: 56.6, milage: 34.5)
+
+motorcycle1.display()
 
 let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
