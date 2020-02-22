@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class VehicleRent
+public class VehicleRent : DisplayDelegate
 {
     var rentStartDate: Date
     var rentEndDate: Date
@@ -21,8 +21,11 @@ public class VehicleRent
     init(rentStartDate: Date, rentEndDate: Date, vehicle: Vehicle, noOfKmDrived: Float) {
         self.rentStartDate = rentStartDate
         self.rentEndDate = rentEndDate
-        self.noOfDays.daysBetween(start: self.rentStartDate, end: self.rentEndDate)
         self.vehicle = vehicle
         self.noOfKmDrived = noOfKmDrived
+    }
+    
+    func display() {
+        print(self.noOfDays.daysBetween(start: self.rentStartDate, end: self.rentEndDate))
     }
 }
