@@ -49,8 +49,11 @@ public class Person: DisplayDelegate
              }else{
                  print("No Birthdate Found")
              }
-        print("Mobile: \(self.mobileNumber)")
-        print("Email: \(self.emailId)")
+        print("Mobile: \(self.mobileNumber.mobileNumberValidation())")
+        
+    
+        print("Email: \(self.emailId.emailValidation())")
+
         print("User Name: \(self.userName)")
         print("Password: \(self.password)")
     }}
