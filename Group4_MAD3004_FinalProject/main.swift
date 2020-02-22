@@ -26,6 +26,11 @@ motorcycle2.display()
 
 let bus1 = Bus(vehicleIdentificationNumber: "SAJWA71B38SH40405", vehicleDescription: "Volvo", manufacturerName: "Mercedes", isSelfDrive: false, isInsured: true, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Volvo, isAccessibilityServiceavailable: true, isWifiAvailable: true)
 
+bus1.display()
+
+let bus2 = Bus(vehicleIdentificationNumber: "3B7HC13Y21G293804", vehicleDescription: "Transit", manufacturerName: "Zum", isSelfDrive: false, isInsured: true, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Mini, isAccessibilityServiceavailable: true, isWifiAvailable: false)
+
+bus2.display()
 
 let customer1 = Customer(id: 34786, firstName: "CUS_Anmol", lastName: "Singh", gender: .Male, birthDate: Date(), mobileNumber: "99887876", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil)
 
