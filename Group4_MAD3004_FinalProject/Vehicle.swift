@@ -19,8 +19,8 @@ public class Vehicle: DisplayDelegate
     var insuranceProviderName: String = "nil"
     var noOfSeat: Int
     var fuelType: Enum.FuelType = .Petrol
-    var baseRate: Int = 0
-    var ratePerKm: Int = 0
+    var baseRate: Double = 0.0
+    var ratePerKm: Double = 0.0
     
       init(vehicleIdentificationNumber: String,
          vehicleDescription: String,
@@ -63,8 +63,8 @@ public class Vehicle: DisplayDelegate
         print("Insurance Provider Name: \(self.insuranceProviderName)")
         print("Seats: \(self.noOfSeat)")
         print("Fuel Type: \(self.fuelType)")
-        print("Base Rate: \(self.baseRate)")
-        print("Rate per Km: \(self.ratePerKm)")
+        print("Base Rate: \(self.baseRate.getFormattedAmount())")
+        print("Rate per Km: \(self.ratePerKm.getFormattedAmount())")
     }
     }
     
