@@ -54,5 +54,8 @@ public class Person: DisplayDelegate
         print("Email: \(self.emailId.emailValidation())")
 
         print("User Name: \(self.userName)")
+        let count = self.password.count
         print("Password: \(self.password)")
+    
+        
     }}
