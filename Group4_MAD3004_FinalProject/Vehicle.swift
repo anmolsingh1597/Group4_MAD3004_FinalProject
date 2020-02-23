@@ -15,7 +15,6 @@ public class Vehicle: DisplayDelegate
     var manufacturerName: String
     var isSelfDrive: Bool
     var driverName: String = "nil"
- //   var driver: Driver
     var isInsured: Bool
     var insuranceProviderName: String = "nil"
     var noOfSeat: Int
