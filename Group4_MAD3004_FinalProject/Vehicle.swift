@@ -52,7 +52,15 @@ public class Vehicle: DisplayDelegate
     }
     
     func driverChecker() -> String{
-        
+        let driver: Driver
+        let name: String
+        if driver.firstName == self.driverName
+        {
+            name = self.driverName
+        }else {
+            name = "Invalid Driver Name"
+        }
+        return name
     }
         
     func display() {
