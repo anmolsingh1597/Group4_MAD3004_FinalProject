@@ -14,9 +14,9 @@ public class Vehicle: DisplayDelegate
     var vehicleDescription: String
     var manufacturerName: String
     var isSelfDrive: Bool
-    var driverName: String?
+    var driverName: String = "nil"
     var isInsured: Bool
-    var insuranceProviderName: String?
+    var insuranceProviderName: String = "nil"
     var noOfSeat: Int
     var fuelType: Enum.FuelType = .Petrol
     var baseRate: Int = 0
@@ -32,11 +32,13 @@ public class Vehicle: DisplayDelegate
         self.manufacturerName = manufacturerName
         self.isSelfDrive = isSelfDrive
         if self.isSelfDrive == false{
+            print("Enter Driver's Name: ")
             let name = readLine()!
             self.driverName = name
         }
         self.isInsured = isInsured
         if self.isInsured == true{
+            print("Enter Insurance Provider: ")
             self.insuranceProviderName = readLine()!
         }
         self.noOfSeat = noOfSeat
@@ -48,17 +50,21 @@ public class Vehicle: DisplayDelegate
         self.baseRate = 0
         self.ratePerKm = 0
     }
+    
+    func driverChecker() -> String{
+        
+    }
         
     func display() {
-        //valueAssigner()
+      
         print("-----Vehicle-----")
         print("VIN: \(self.vehicleIdentificationNumber)")
         print("Vehicle Description: \(self.vehicleDescription)")
         print("Manufacturer Name: \(self.manufacturerName)")
         print("Self Drive: \(self.isSelfDrive)")
-        print("Driver Name: \(self.driverName ?? nil)")
+        print("Driver Name: \(self.driverName)")
         print("Insurance: \(self.isInsured)")
-        print("Insurance Provider Name: \(self.insuranceProviderName ?? nil)")
+        print("Insurance Provider Name: \(self.insuranceProviderName)")
         print("Seats: \(self.noOfSeat)")
         print("Fuel Type: \(self.fuelType)")
         print("Base Rate: \(self.baseRate)")
