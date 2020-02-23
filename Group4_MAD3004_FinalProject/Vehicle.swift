@@ -15,6 +15,7 @@ public class Vehicle: DisplayDelegate
     var manufacturerName: String
     var isSelfDrive: Bool
     var driverName: String = "nil"
+ //   var driver: Driver
     var isInsured: Bool
     var insuranceProviderName: String = "nil"
     var noOfSeat: Int
@@ -50,19 +51,7 @@ public class Vehicle: DisplayDelegate
         self.baseRate = 0
         self.ratePerKm = 0
     }
-    
-    func driverChecker() -> String{
-        let driver: Driver
-        let name: String
-        if driver.firstName == self.driverName
-        {
-            name = self.driverName
-        }else {
-            name = "Invalid Driver Name"
-        }
-        return name
-    }
-        
+
     func display() {
       
         print("-----Vehicle-----")
