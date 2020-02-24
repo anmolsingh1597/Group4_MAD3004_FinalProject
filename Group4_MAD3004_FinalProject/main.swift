@@ -57,5 +57,11 @@ let owner2 = Owner(id: 54323, firstName: "Aman", lastName: "Kaur", gender: .Fema
 owner2.display()
 
 
-let user = User(id: 1, name: "name")
-print(user.convertToString!)
+//let user = User(id: 1, name: "name")
+//print(user.convertToString!)
+//
+////print(customer1)
+//
+//let personStruct1 = PersonStruct(id: 12, firstName: "A", lastName: "L", birthDate: Date.from(year: 1997, month: 11, day: 15) ?? Date(), age: 4, mobileNumber: "khj", emailId: "jhj", userName: "jbjh", password: "cb")
+//
+//print(personStruct1.convertToString!)

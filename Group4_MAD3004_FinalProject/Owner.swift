@@ -37,7 +37,7 @@ public class Owner: Person
     print("Id: \(self.id.concatOwnerPrefix())")
     super.display()
     print("Comapny: \(self.companyTitle ?? "No Company provided")")
-    print("Business Number: \(self.businessNumber ?? "No Number provided")")
+    print("Business Number: \(self.businessNumber?.mobileNumberValidation() ?? "No Number provided")")
     print("Website: \(self.website ?? "No webiste provided")")
     print("Vehicle List: \(vehicleDictionary)")
  
