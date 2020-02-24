@@ -34,11 +34,12 @@ extension String{
         
         return "Invalid Mobile Number"
     }
-// func encrypt(text: String) -> String?  {
-//     if let aes = try? AES(key: "passwordpassword", iv: "drowssapdrowssap"),
-//        let encrypted = try? aes.encrypt(Array(text.utf8)) {
-//         return encrypted.toHexString()
-//     }
-//     return nil
-// }
+ func encrypt()  {
+    _ = self.count
+    print("Password: ")
+          for _ in self
+          {
+            print("*", terminator: "")
+            }
+ }
 }

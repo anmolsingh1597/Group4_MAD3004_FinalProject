@@ -49,14 +49,10 @@ public class Person: DisplayDelegate
                  print("No Birthdate Found")
              }
         print("Mobile: \(self.mobileNumber.mobileNumberValidation())")
-        
-    
         print("Email: \(self.emailId.emailValidation())")
-
         print("User Name: \(self.userName)")
-        let count = self.password.count
-        print(count)
-        print("Password: \(self.password)")
+        self.password.encrypt()
+        print("")
     
         
     }}
