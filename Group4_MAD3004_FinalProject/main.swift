@@ -52,7 +52,7 @@ let owner1 = Owner(id: 54675, firstName: "Monica", lastName: "Sharma", gender: .
 
 owner1.display()
 
-let owner2 = Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Female, birthDate: Date.from(year: 1997, month: 17, day: 2) ?? Date(), mobileNumber: "908765", email: "own_kritimaowner.com", userName: "own_kritima", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [bus2, motorcycle1, motorcycle2])
+let owner2 = Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Female, birthDate: Date.from(year: 1997, month: 1, day: 2) ?? Date(), mobileNumber: "908765", email: "own_kritimaowner.com", userName: "own_kritima", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [bus2, motorcycle1, motorcycle2])
 
 owner2.display()
 
