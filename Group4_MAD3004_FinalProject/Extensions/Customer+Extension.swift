@@ -22,6 +22,8 @@ extension Customer {
     "password": self.password,
     "address": self.address ?? "No address provided",
     "city": self.city ?? "No city provided",
+    //"rentStartDate": self.vehicleRent.rentStartDate,
+  //  "rentEndDate": self.vehicleRent.rentEndDate,
     "Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
     ];
   }

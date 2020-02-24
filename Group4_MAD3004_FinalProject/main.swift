@@ -8,7 +8,7 @@
 
 import Foundation
 
-let car1 = Car(vehicleIdentificationNumber: "1GNSKJE71ER220790", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: true, /*driver: driver1,*/ isInsured: true, noOfSeat: 4, fuelType: .Diesel, carType: .Luxury, carColor: "Beautiful")
+let car1 = Car(vehicleIdentificationNumber: "1GNSKJE71ER220790", vehicleDescription: "Q7", manufacturerName: "Audii", isSelfDrive: false, /*driver: driver1,*/ isInsured: true, noOfSeat: 4, fuelType: .Diesel, carType: .Luxury, carColor: "Beautiful")
 
 car1.display()
 
@@ -16,19 +16,19 @@ let car2 = Car(vehicleIdentificationNumber: "1XP5DB9X8YN539999", vehicleDescript
 
 car2.display()
 
-let motorcycle1 = Motorcycle(vehicleIdentificationNumber: "3VW2K7AJ7FM381660", vehicleDescription: "BMX", manufacturerName: "BMW", isSelfDrive: true, /*driver: driver1,*/ isInsured: true, noOfSeat: 2, fuelType: .Petrol, maxTopSpeed: 56.6, milage: 34.5)
+let motorcycle1 = Motorcycle(vehicleIdentificationNumber: "3VW2K7AJ7FM381660", vehicleDescription: "BMX", manufacturerName: "BMW", isSelfDrive: true, /*driver: driver1,*/ isInsured: false, noOfSeat: 2, fuelType: .Petrol, maxTopSpeed: 56.6, milage: 34.5)
 
 motorcycle1.display()
 
-let motorcycle2 = Motorcycle(vehicleIdentificationNumber: "WBABN53492JU83746", vehicleDescription: "Enfield", manufacturerName: "Royal", isSelfDrive: true,/* driver: driver1,*/ isInsured: true, noOfSeat: 2, fuelType: .Petrol, maxTopSpeed: 65.6, milage: 24.5)
+let motorcycle2 = Motorcycle(vehicleIdentificationNumber: "WBABN53492JU83746", vehicleDescription: "Enfield", manufacturerName: "Royal", isSelfDrive: true,/* driver: driver1,*/ isInsured: false, noOfSeat: 2, fuelType: .Petrol, maxTopSpeed: 65.6, milage: 24.5)
 
 motorcycle2.display()
 
-let bus1 = Bus(vehicleIdentificationNumber: "SAJWA71B38SH40405", vehicleDescription: "Volvo", manufacturerName: "Mercedes", isSelfDrive: false,/* driver: driver1,*/ isInsured: true, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Volvo, isAccessibilityServiceavailable: true, isWifiAvailable: true)
+let bus1 = Bus(vehicleIdentificationNumber: "SAJWA71B38SH40405", vehicleDescription: "Volvo", manufacturerName: "Mercedes", isSelfDrive: true,/* driver: driver1,*/ isInsured: false, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Volvo, isAccessibilityServiceavailable: true, isWifiAvailable: true)
 
 bus1.display()
 
-let bus2 = Bus(vehicleIdentificationNumber: "3B7HC13Y21G293804", vehicleDescription: "Transit", manufacturerName: "Zum", isSelfDrive: false,/* driver: driver1,*/ isInsured: true, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Mini, isAccessibilityServiceavailable: true, isWifiAvailable: false)
+let bus2 = Bus(vehicleIdentificationNumber: "3B7HC13Y21G293804", vehicleDescription: "Transit", manufacturerName: "Zum", isSelfDrive: true,/* driver: driver1,*/ isInsured: false, noOfSeat: 45, fuelType: .Diesel, typeOfBus: .Mini, isAccessibilityServiceavailable: true, isWifiAvailable: false)
 
 bus2.display()
 
@@ -64,3 +64,6 @@ owner2.dataDictionary.dictToJson()
 
 driver1.dataDictionary.dictToJson()
 driver2.dataDictionary.dictToJson()
+
+car1.dataDictionary.dictToJson()
+car2.dataDictionary.dictToJson()
