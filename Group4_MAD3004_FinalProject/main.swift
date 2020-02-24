@@ -57,3 +57,5 @@ let owner2 = Owner(id: 54323, firstName: "Aman", lastName: "Kaur", gender: .Fema
 owner2.display()
 
 
+let user = User(id: 1, name: "name")
+print(user.convertToString!)
