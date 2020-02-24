@@ -56,5 +56,21 @@ let owner2 = Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Femal
 
 owner2.display()
 
-//let user = User(id: 1, name: "name")
-//print(user.convertToString!)
+
+do {
+  // encoding dictionary data to JSON
+  let jsonData = try JSONSerialization.data(withJSONObject: customer1.dataDictionary,
+                                                   options: .prettyPrinted)
+
+   // print(jsonData)
+  // decoding JSON to Swift object
+  let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
+  // after decoding, "decoded" is of type `Any?`, so it can't be used
+  // we must check for nil and cast it to the right type
+    print(decoded)
+    if decoded is [String: Any] {
+      // use dataFromJSON
+  }
+} catch {
+    // handle conversion errors
+}
