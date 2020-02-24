@@ -44,15 +44,15 @@ let driver1 = Driver(id: 44342, firstName: "Ikroop", lastName: "Virk", gender: .
 
 driver1.display()
 
-let driver2 = Driver(id: 44563, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "8743673538", email: "dri_aman@driver.com", userName: "dri_aman", password: "hy76t5r", drivingLicenceNumber: "JHYT78654", isDrivingHistoryCleared: true, salary: 9989.90)
+let driver2 = Driver(id: 44563, firstName: "Steve", lastName: "Maiden", gender: .Male, birthDate: Date.from(year: 1989, month: 06, day: 06) ?? Date(), mobileNumber: "5645389706", email: "dri_steve@driver.com", userName: "dri_steve", password: "hi_i_am_steve", drivingLicenceNumber: "JHYT78654", isDrivingHistoryCleared: true, salary: 9989.90)
 
 driver2.display()
 
-let owner1 = Owner(id: 54675, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date.from(year: 1997, month: 11, day: 15) ?? Date(), mobileNumber: "786543", email: "own_anmol@owner.com", userName: "own_anmol", password: "hygftgfd", companyTitle: "Company1", businessNumber: nil, website: nil, vehicleList: [car1, car2])
+let owner1 = Owner(id: 54675, firstName: "Monica", lastName: "Sharma", gender: .Female, birthDate: Date.from(year: 1991, month: 01, day: 01) ?? Date(), mobileNumber: "78876543", email: "own_monica@owner.com", userName: "own_monica", password: "hygftgfd", companyTitle: "Company_1", businessNumber: nil, website: "http://monicaishere.com", vehicleList: [car1, car2, bus1])
 
 owner1.display()
 
-let owner2 = Owner(id: 54323, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "908765", email: "own_amanowner.com", userName: "own_aman", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [bus2, motorcycle1])
+let owner2 = Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Female, birthDate: Date.from(year: 1997, month: 17, day: 2) ?? Date(), mobileNumber: "908765", email: "own_kritimaowner.com", userName: "own_kritima", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [bus2, motorcycle1, motorcycle2])
 
 owner2.display()
 
