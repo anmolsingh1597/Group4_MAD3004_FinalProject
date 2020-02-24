@@ -60,3 +60,7 @@ customer1.dataDictionary.dictToJson()
 customer2.dataDictionary.dictToJson()
 
 owner1.dataDictionary.dictToJson()
+owner2.dataDictionary.dictToJson()
+
+driver1.dataDictionary.dictToJson()
+driver2.dataDictionary.dictToJson()
