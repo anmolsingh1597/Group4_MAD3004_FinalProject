@@ -57,3 +57,6 @@ let owner2 = Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Femal
 owner2.display()
 
 customer1.dataDictionary.dictToJson()
+customer2.dataDictionary.dictToJson()
+
+owner1.dataDictionary.dictToJson()

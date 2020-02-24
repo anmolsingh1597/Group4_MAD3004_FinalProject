@@ -1,5 +1,5 @@
 //
-//  Person+Extension.swift
+//  Owner+Extension.swift
 //  Group4_MAD3004_FinalProject
 //
 //  Created by Anmol singh on 2020-02-24.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension Customer {
+extension Owner {
     var dataDictionary: [String: Any] {
     return [
-    "id": self.id.concatCustomerPrefix(),
+    "id": self.id.concatOwnerPrefix(),
     "firstName": self.firstName,
     "lastName": self.lastName,
     "dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
@@ -20,9 +20,10 @@ extension Customer {
     "email": self.emailId,
     "username": self.userName,
     "password": self.password,
-    "address": self.address ?? "No address provided",
-    "city": self.city ?? "No city provided",
-    "Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
+    "company_title": self.companyTitle ?? "No Company provided",
+    "business number": self.businessNumber?.mobileNumberValidation() ?? "No Number provided",
+    "website": self.website ?? "No webiste provided",
+    "vehicle_list": self.vehicleDictionary
     ];
   }
 }
