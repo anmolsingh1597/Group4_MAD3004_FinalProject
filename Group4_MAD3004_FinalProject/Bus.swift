@@ -35,7 +35,18 @@ public class Bus: Vehicle
         print("-----Bus-----")
         super.display()
         print("Bus Type: \(self.typeOfBus)")
-        print("Accessibility Service: \(self.isAccessibilityServiceavailable)")
-        print("Wifi: \(self.isWifiAvailable)")
+      
+        if self.isAccessibilityServiceavailable == true {
+                         print("Accessibility Service: Available")
+                         }else{
+                             print("Accessibility Service: Unavailable")
+                         }
+
+        if self.isWifiAvailable == true {
+                                print("Wifi: Available")
+                                }else{
+                                    print("Wifi: Unavailable")
+                                }
+        
       }
 }
