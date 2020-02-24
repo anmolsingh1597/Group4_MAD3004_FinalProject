@@ -67,3 +67,8 @@ driver2.dataDictionary.dictToJson()
 
 car1.dataDictionary.dictToJson()
 car2.dataDictionary.dictToJson()
+
+motorcycle1.dataDictionary.dictToJson()
+motorcycle2.dataDictionary.dictToJson()
+
+
