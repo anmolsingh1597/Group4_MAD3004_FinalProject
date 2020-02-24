@@ -55,6 +55,7 @@ public class Person: DisplayDelegate
 
         print("User Name: \(self.userName)")
         let count = self.password.count
+        print(count)
         print("Password: \(self.password)")
     
         
