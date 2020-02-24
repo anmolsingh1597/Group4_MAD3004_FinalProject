@@ -57,9 +57,18 @@ public class Vehicle: DisplayDelegate
         print("VIN: \(self.vehicleIdentificationNumber)")
         print("Vehicle Description: \(self.vehicleDescription)")
         print("Manufacturer Name: \(self.manufacturerName)")
-        print("Self Drive: \(self.isSelfDrive)")
+        if self.isSelfDrive == true {
+                                       print("Self Drive: Available")
+                                       }else{
+                                           print("Self Drive: Unavailable")
+                                       }
         print("Driver Name: \(self.driverName)")
-        print("Insurance: \(self.isInsured)")
+        if self.isInsured == true {
+                                       print("Insurance: Insured")
+                                       }else{
+                                           print("Insurance: Uninsured")
+                                       }
+               
         print("Insurance Provider Name: \(self.insuranceProviderName)")
         print("Seats: \(self.noOfSeat)")
         print("Fuel Type: \(self.fuelType)")
