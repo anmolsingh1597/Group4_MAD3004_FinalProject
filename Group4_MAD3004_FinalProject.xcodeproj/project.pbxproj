@@ -21,6 +21,7 @@
 		8E3E096624048FAA0054818B /* Car+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E096524048FAA0054818B /* Car+Extension.swift */; };
 		8E3E0968240494F30054818B /* Motorcycle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E0967240494F30054818B /* Motorcycle+Extension.swift */; };
 		8E3E096A240495E00054818B /* Bus+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E0969240495E00054818B /* Bus+Extension.swift */; };
+		8E3E096D240497CC0054818B /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E096C240497CC0054818B /* CustomErrors.swift */; };
 		9B214B9023FF4E62003CFFF2 /* DataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B214B8F23FF4E62003CFFF2 /* DataRepo.swift */; };
 		9B214B9323FF4F4F003CFFF2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B214B9223FF4F4F003CFFF2 /* String+Extension.swift */; };
 		9B79369723F4B4CF00DCB86B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79369623F4B4CF00DCB86B /* Person.swift */; };
@@ -62,6 +63,7 @@
 		8E3E096524048FAA0054818B /* Car+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Car+Extension.swift"; sourceTree = "<group>"; };
 		8E3E0967240494F30054818B /* Motorcycle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Motorcycle+Extension.swift"; sourceTree = "<group>"; };
 		8E3E0969240495E00054818B /* Bus+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bus+Extension.swift"; sourceTree = "<group>"; };
+		8E3E096C240497CC0054818B /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		9B214B8F23FF4E62003CFFF2 /* DataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepo.swift; sourceTree = "<group>"; };
 		9B214B9223FF4F4F003CFFF2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9B79369623F4B4CF00DCB86B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		8E007B3823F4B2E800D6DC2A /* Group4_MAD3004_FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				8E3E096B240497A80054818B /* Errors */,
 				9B214B9123FF4EE3003CFFF2 /* Extensions */,
 				9B79369823F4B53600DCB86B /* Enum */,
 				8E007B3923F4B2E800D6DC2A /* main.swift */,
@@ -121,6 +124,14 @@
 				8E3E094F2401AAEC0054818B /* VehicleRent.swift */,
 			);
 			path = Group4_MAD3004_FinalProject;
+			sourceTree = "<group>";
+		};
+		8E3E096B240497A80054818B /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E096C240497CC0054818B /* CustomErrors.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 		9B214B9123FF4EE3003CFFF2 /* Extensions */ = {
@@ -225,6 +236,7 @@
 				8E007B3A23F4B2E800D6DC2A /* main.swift in Sources */,
 				8E3E096424048D2D0054818B /* Driver+Extension.swift in Sources */,
 				8E3E096624048FAA0054818B /* Car+Extension.swift in Sources */,
+				8E3E096D240497CC0054818B /* CustomErrors.swift in Sources */,
 				8E3E095E24047E4E0054818B /* Customer+Extension.swift in Sources */,
 				9B7936A423F4C01000DCB86B /* Car.swift in Sources */,
 				9B7936A623F4C0A800DCB86B /* Motorcycle.swift in Sources */,
