@@ -11,10 +11,18 @@ import Foundation
 extension Customer {
     var dataDictionary: [String: Any] {
     return [
-      "firstName": self.firstName,
-      "lastName": self.lastName,
-      "dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
-      "Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
+    "id": self.id.concatCustomerPrefix(),
+    "firstName": self.firstName,
+    "lastName": self.lastName,
+    "dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
+//    "gender": self.gender,
+    "mobile": self.mobileNumber,
+    "email": self.emailId,
+    "username": self.userName,
+    "password": self.password,
+    "address": self.address ?? "No address provided",
+    "city": self.city ?? "No city provided",
+    "Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
     ];
   }
 }
