@@ -15,7 +15,7 @@ public class Car: Vehicle
     
     init(vehicleIdentificationNumber: String,
     vehicleDescription: String,
-    manufacturerName: String, isSelfDrive : Bool,/* driver: Driver,*/ isInsured : Bool,
+    manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
     noOfSeat : Int, fuelType: Enum.FuelType, carType: Enum.CarType,
     carColor: String)
     {

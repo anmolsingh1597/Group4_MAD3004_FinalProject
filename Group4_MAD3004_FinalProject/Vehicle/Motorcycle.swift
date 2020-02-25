@@ -15,7 +15,7 @@ public class Motorcycle: Vehicle
     
     init(vehicleIdentificationNumber: String,
     vehicleDescription: String,
-    manufacturerName: String, isSelfDrive : Bool, /* driver: Driver,*/isInsured : Bool,
+    manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
     noOfSeat : Int, fuelType: Enum.FuelType, maxTopSpeed: Float, milage: Float) {
         self.maxTopSpeed = maxTopSpeed
         self.milage = milage

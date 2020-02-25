@@ -16,7 +16,7 @@ public class Bus: Vehicle
     
     init(vehicleIdentificationNumber: String,
       vehicleDescription: String,
-      manufacturerName: String, isSelfDrive : Bool,/* driver: Driver,*/ isInsured : Bool,
+      manufacturerName: String, isSelfDrive : Bool, isInsured : Bool,
       noOfSeat : Int, fuelType: Enum.FuelType, typeOfBus: Enum.BusType,
       isAccessibilityServiceavailable: Bool,
       isWifiAvailable: Bool) {
