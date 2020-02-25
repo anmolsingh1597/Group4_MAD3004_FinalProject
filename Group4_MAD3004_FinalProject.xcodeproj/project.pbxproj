@@ -23,7 +23,6 @@
 		8E3E096A240495E00054818B /* Bus+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E0969240495E00054818B /* Bus+Extension.swift */; };
 		8E3E096D240497CC0054818B /* CustomErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E096C240497CC0054818B /* CustomErrors.swift */; };
 		8E3E096F2404A2680054818B /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3E096E2404A2680054818B /* Float+Extension.swift */; };
-		9B214B9023FF4E62003CFFF2 /* DataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B214B8F23FF4E62003CFFF2 /* DataRepo.swift */; };
 		9B214B9323FF4F4F003CFFF2 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B214B9223FF4F4F003CFFF2 /* String+Extension.swift */; };
 		9B79369723F4B4CF00DCB86B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79369623F4B4CF00DCB86B /* Person.swift */; };
 		9B79369A23F4B54500DCB86B /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B79369923F4B54500DCB86B /* Enum.swift */; };
@@ -66,7 +65,6 @@
 		8E3E0969240495E00054818B /* Bus+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bus+Extension.swift"; sourceTree = "<group>"; };
 		8E3E096C240497CC0054818B /* CustomErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrors.swift; sourceTree = "<group>"; };
 		8E3E096E2404A2680054818B /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
-		9B214B8F23FF4E62003CFFF2 /* DataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepo.swift; sourceTree = "<group>"; };
 		9B214B9223FF4F4F003CFFF2 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9B79369623F4B4CF00DCB86B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9B79369923F4B54500DCB86B /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
@@ -109,21 +107,14 @@
 		8E007B3823F4B2E800D6DC2A /* Group4_MAD3004_FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				8E3E09732404A4E40054818B /* Protocol */,
+				8E3E09722404A4CA0054818B /* VehicleRent */,
+				8E3E09712404A4B10054818B /* Vehicle */,
+				8E3E09702404A48A0054818B /* Person */,
 				8E3E096B240497A80054818B /* Errors */,
 				9B214B9123FF4EE3003CFFF2 /* Extensions */,
 				9B79369823F4B53600DCB86B /* Enum */,
 				8E007B3923F4B2E800D6DC2A /* main.swift */,
-				9B214B8F23FF4E62003CFFF2 /* DataRepo.swift */,
-				9B79369623F4B4CF00DCB86B /* Person.swift */,
-				9B79369B23F4B6DF00DCB86B /* Customer.swift */,
-				9B79369D23F4B80400DCB86B /* Owner.swift */,
-				8E007B4223F4B92B00D6DC2A /* DisplayDelegate.swift */,
-				9B79369F23F4BB5A00DCB86B /* Driver.swift */,
-				9B7936A123F4BFB100DCB86B /* Vehicle.swift */,
-				9B7936A323F4C01000DCB86B /* Car.swift */,
-				9B7936A523F4C0A800DCB86B /* Motorcycle.swift */,
-				9B7936A723F4C0E800DCB86B /* Bus.swift */,
-				8E3E094F2401AAEC0054818B /* VehicleRent.swift */,
 			);
 			path = Group4_MAD3004_FinalProject;
 			sourceTree = "<group>";
@@ -134,6 +125,44 @@
 				8E3E096C240497CC0054818B /* CustomErrors.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		8E3E09702404A48A0054818B /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				9B79369623F4B4CF00DCB86B /* Person.swift */,
+				9B79369B23F4B6DF00DCB86B /* Customer.swift */,
+				9B79369D23F4B80400DCB86B /* Owner.swift */,
+				9B79369F23F4BB5A00DCB86B /* Driver.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		8E3E09712404A4B10054818B /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				9B7936A123F4BFB100DCB86B /* Vehicle.swift */,
+				9B7936A323F4C01000DCB86B /* Car.swift */,
+				9B7936A523F4C0A800DCB86B /* Motorcycle.swift */,
+				9B7936A723F4C0E800DCB86B /* Bus.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		8E3E09722404A4CA0054818B /* VehicleRent */ = {
+			isa = PBXGroup;
+			children = (
+				8E3E094F2401AAEC0054818B /* VehicleRent.swift */,
+			);
+			path = VehicleRent;
+			sourceTree = "<group>";
+		};
+		8E3E09732404A4E40054818B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8E007B4223F4B92B00D6DC2A /* DisplayDelegate.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		9B214B9123FF4EE3003CFFF2 /* Extensions */ = {
@@ -234,7 +263,6 @@
 				9B7936A023F4BB5A00DCB86B /* Driver.swift in Sources */,
 				8E3E09502401AAEC0054818B /* VehicleRent.swift in Sources */,
 				8E3E094E24019E7A0054818B /* Date+Extension.swift in Sources */,
-				9B214B9023FF4E62003CFFF2 /* DataRepo.swift in Sources */,
 				8E007B4323F4B92B00D6DC2A /* DisplayDelegate.swift in Sources */,
 				8E007B3A23F4B2E800D6DC2A /* main.swift in Sources */,
 				8E3E096424048D2D0054818B /* Driver+Extension.swift in Sources */,
