@@ -19,7 +19,7 @@ extension Customer {
     "mobile": self.mobileNumber,
     "email": self.emailId,
     "username": self.userName,
-    "password": self.password.encrypt(),
+    "password": self.password,
     "address": self.address ?? "No address provided",
     "city": self.city ?? "No city provided",
     //"rentStartDate": self.vehicleRent.rentStartDate,
