@@ -32,7 +32,11 @@ public class Person: DisplayDelegate
              self.lastName = lastName
              self.gender = gender
              self.birthDate = birthDate
-             self.mobileNumber = mobileNumber
+            if mobileNumber.mobileValid(){
+                self.mobileNumber = mobileNumber}
+            else{
+                throw CustomError.mobileInvalid
+            }
             if email.emailValid(){
                 self.emailId = email
             }else
@@ -53,6 +57,7 @@ public class Person: DisplayDelegate
                  print("No Birthdate Found")
              }
         print("Mobile: \(self.mobileNumber.mobileNumberValidation())")
+       // if let emailId = email, emailId.emailValid()
         print("Email: \(self.emailId.emailValidation())")
         print("User Name: \(self.userName)")
         self.password.encrypt()
