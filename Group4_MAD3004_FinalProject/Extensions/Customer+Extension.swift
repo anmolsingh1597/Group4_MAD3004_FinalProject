@@ -25,6 +25,8 @@ extension Customer {
     "rentStartDate": self.vehicleRent.rentStartDate.getFormattedDate(),
     "rentEndDate": self.vehicleRent.rentEndDate.getFormattedDate(),
     "noOfDays": self.vehicleRent.noOfDays,
+    "Vehicle": self.vehicleRent.vehicle.manufacturerName,
+    "No of Km drove": self.vehicleRent.noOfKmDrived.concatKm(),
     "Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
     ];
   }
