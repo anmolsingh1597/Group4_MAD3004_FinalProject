@@ -52,15 +52,15 @@ let owner1 = try Owner(id: 54675, firstName: "Monica", lastName: "Sharma", gende
 
 owner1.display()
 
-let owner2 = try Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Female, birthDate: Date.from(year: 1997, month: 1, day: 2) ?? Date(), mobileNumber: "908765", email: "own_kritimaowner.com", userName: "own_kritima", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [bus2, motorcycle1, motorcycle2])
+let owner2 = try Owner(id: 54323, firstName: "Kritima", lastName: "", gender: .Female, birthDate: Date.from(year: 1997, month: 1, day: 2) ?? Date(), mobileNumber: "908765", email: "own_kritima@owner.com", userName: "own_kritima", password: "hgtfrde", companyTitle: "Company2", businessNumber: "9876556", website: nil, vehicleList: [bus2, motorcycle1, motorcycle2])
 
-//owner2.display()
+owner2.display()
 
 customer1.dataDictionary.dictToJson()
 customer2.dataDictionary.dictToJson()
 
 owner1.dataDictionary.dictToJson()
-//owner2.dataDictionary.dictToJson()
+owner2.dataDictionary.dictToJson()
 
 driver1.dataDictionary.dictToJson()
 driver2.dataDictionary.dictToJson()
