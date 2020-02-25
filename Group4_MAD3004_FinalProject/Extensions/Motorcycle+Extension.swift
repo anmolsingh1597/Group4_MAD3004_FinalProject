@@ -22,7 +22,7 @@ extension Motorcycle {
         //"fuelType": self.fuelType,
         "baseRate": self.baseRate.getFormattedAmount(),
         "ratePerKm": self.ratePerKm.getFormattedAmount(),
-        "maxTopSpeed": self.maxTopSpeed,
+        "maxTopSpeed": self.maxTopSpeed.concatKmhr(),
         "milage": self.milage
     ];
   }

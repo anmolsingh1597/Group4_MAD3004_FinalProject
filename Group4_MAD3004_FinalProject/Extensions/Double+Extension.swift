@@ -17,5 +17,4 @@ func concatKm() -> String
 {
         return "\(self) Km"
 }
-       
 }

@@ -29,7 +29,7 @@ public class Motorcycle: Vehicle
     override func display() {
         print("-----Motorcycle-----")
         super.display()
-        print("Max Top Speed: \(self.maxTopSpeed)")
+        print("Max Top Speed: \(self.maxTopSpeed.concatKmhr())")
         print("Milage: \(self.milage)")
     }
 }
