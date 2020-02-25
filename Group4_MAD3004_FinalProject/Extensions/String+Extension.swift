@@ -42,13 +42,9 @@ extension String{
             print("*", terminator: "")
             }
  }
-    func emailValidation() -> String {
+    func emailValid() -> Bool {
            let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
            let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
-           if emailPredicate.evaluate(with: self) == true{
-               return self
-           }
-           return "Invalid Email"
-       }
-    
+        return emailPredicate.evaluate(with: self)
+}
 }

@@ -14,12 +14,12 @@ public class Customer: Person
     var city: String?
     var vehicleRent: VehicleRent
     
-    init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, address: String?, city: String?, vehicleRent: VehicleRent)
+    init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, address: String?, city: String?, vehicleRent: VehicleRent) throws
     {
         self.address = address
         self.city = city
         self.vehicleRent = vehicleRent
-        super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
+        try super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
 
     }
     

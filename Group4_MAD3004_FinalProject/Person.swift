@@ -25,7 +25,7 @@ public class Person: DisplayDelegate
          var password : String
          
          init(id : Int, firstName: String, lastName : String, gender : Enum.Gender, birthDate: Date, mobileNumber: String,
-              email: String, userName: String, password: String){
+              email: String, userName: String, password: String) throws {
              
              self.id = id
              self.firstName = firstName
@@ -33,7 +33,11 @@ public class Person: DisplayDelegate
              self.gender = gender
              self.birthDate = birthDate
              self.mobileNumber = mobileNumber
-             self.emailId = email
+            if email.emailValid(){
+                self.emailId = email
+            }else
+            {throw CustomError.emailInvalid}
+            
              self.userName = userName
              self.password = password
          }

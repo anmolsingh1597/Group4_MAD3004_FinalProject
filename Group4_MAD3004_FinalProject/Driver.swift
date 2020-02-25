@@ -16,12 +16,12 @@ public class Driver: Person
     
 
     
-    init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, drivingLicenceNumber: String, isDrivingHistoryCleared: Bool, salary: Double)
+    init(id: Int, firstName: String, lastName: String, gender: Enum.Gender, birthDate: Date, mobileNumber: String, email: String, userName: String, password: String, drivingLicenceNumber: String, isDrivingHistoryCleared: Bool, salary: Double) throws
     {
             self.drivingLicenceNumber = drivingLicenceNumber
             self.isDrivingHistoryCleared = isDrivingHistoryCleared
             self.salary = salary
-            super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
+            try super.init(id: id, firstName: firstName, lastName: lastName, gender: gender, birthDate: birthDate, mobileNumber: mobileNumber, email: email, userName: userName, password: password)
        
     }
     
