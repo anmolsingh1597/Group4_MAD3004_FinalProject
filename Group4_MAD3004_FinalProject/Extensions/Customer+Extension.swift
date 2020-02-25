@@ -24,6 +24,7 @@ extension Customer {
     "city": self.city ?? "No city provided",
     "rentStartDate": self.vehicleRent.rentStartDate.getFormattedDate(),
     "rentEndDate": self.vehicleRent.rentEndDate.getFormattedDate(),
+    "noOfDays": self.vehicleRent.noOfDays,
     "Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
     ];
   }
