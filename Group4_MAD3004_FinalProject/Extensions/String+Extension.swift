@@ -47,4 +47,10 @@ extension String{
            let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
         return emailPredicate.evaluate(with: self)
 }
+    func mobileValid() -> Bool {
+           let phonePattern = "^\\d{10}$"
+           let phoneTest = NSPredicate(format: "SELF MATCHES %@", phonePattern)
+           let result =  phoneTest.evaluate(with: self)
+           return result
+       }
 }
