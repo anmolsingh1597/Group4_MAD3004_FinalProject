@@ -12,15 +12,12 @@ extension Dictionary{
     
     func dictToJson(){
     do {
-      // encoding dictionary data to JSON
+    
       let jsonData = try JSONSerialization.data(withJSONObject: self,
                                                        options: .prettyPrinted)
 
-       // print(jsonData) = bytes
-      // decoding JSON to Swift object
       let decoded = try JSONSerialization.jsonObject(with: jsonData, options: [])
-      // after decoding, "decoded" is of type `Any?`, so it can't be used
-      // we must check for nil and cast it to the right type
+     
         print(decoded) // output
         if decoded is [String: Any] {
           // use dataFromJSON

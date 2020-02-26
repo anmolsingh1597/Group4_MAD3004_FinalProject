@@ -32,13 +32,13 @@ let bus2 = Bus(vehicleIdentificationNumber: "3B7HC13Y21G293804", vehicleDescript
 
 //bus2.display()
 
-let customer1 = try Customer(id: 34786, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date.from(year: 1997, month: 11, day: 15) ?? Date(), mobileNumber: "9988787699", email: "cus_anmol@customer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil, vehicleRent: VehicleRent(rentStartDate: Date.from(year: 2020, month: 02, day: 22) ?? Date(), rentEndDate: Date.from(year: 2020, month: 03, day: 01) ?? Date(), vehicle: car1, noOfKmDrived: 5))
+let customer1 = try Customer(id: 34786, firstName: "Anmol", lastName: "Singh", gender: .Male, birthDate: Date.from(year: 1997, month: 11, day: 15) ?? Date(), mobileNumber: "9988787699", email: "cus_anmolcustomer.com", userName: "cus_anmol", password: "gyhsggdt", address: nil, city: nil, vehicleRent: VehicleRent(rentStartDate: Date.from(year: 2020, month: 02, day: 22) ?? Date(), rentEndDate: Date.from(year: 2020, month: 03, day: 01) ?? Date(), vehicle: car1, noOfKmDrived: 5))
 
 //customer1.display()
 
 let customer2 = try Customer(id: 34789, firstName: "Aman", lastName: "Kaur", gender: .Female, birthDate: Date.from(year: 1997, month: 07, day: 26) ?? Date(), mobileNumber: "8767835336", email: "cus_aman@customer.com", userName: "cus_aman", password: "65746", address: "Rivermount", city: "Brampton", vehicleRent: VehicleRent(rentStartDate: Date.from(year: 2020, month: 01, day: 21) ?? Date(), rentEndDate: Date.from(year: 2020, month: 02, day: 03) ?? Date(), vehicle: bus2, noOfKmDrived: 5) )
 
-//customer2.display()
+customer2.display()
 
 let driver1 = try Driver(id: 44342, firstName: "Ikroop", lastName: "Virk", gender: .Female, birthDate: Date.from(year: 1995, month: 04, day: 21) ?? Date(), mobileNumber: "8754335522", email: "dri_ikroop@driver.com", userName: "dri_ikroop", password: "jhbjhg", drivingLicenceNumber: "GHYT787654", isDrivingHistoryCleared: false, salary: 8898.98)
 
@@ -48,7 +48,7 @@ let driver2 = try Driver(id: 44563, firstName: "Steve", lastName: "Maiden", gend
 
 //driver2.display()
 
-let owner1 = try Owner(id: 54675, firstName: "Monica", lastName: "Sharma", gender: .Female, birthDate: Date.from(year: 1991, month: 01, day: 01) ?? Date(), mobileNumber: "7887654300", email: "own_monica@owner.com", userName: "own_monica", password: "hygftgfd", companyTitle: "Company_1", businessNumber: nil, website: "http://monicaishere.com", vehicleList: [car1, car2, bus1])
+let owner1 =  try Owner(id: 54675, firstName: "Monica", lastName: "Sharma", gender: .Female, birthDate: Date.from(year: 1991, month: 01, day: 01) ?? Date(), mobileNumber: "7887654300", email: "own_monica@owner.com", userName: "own_monica", password: "hygftgfd", companyTitle: "Company_1", businessNumber: nil, website: "http://monicaishere.com", vehicleList: [car1, car2, bus1])
 
 //owner1.display()
 

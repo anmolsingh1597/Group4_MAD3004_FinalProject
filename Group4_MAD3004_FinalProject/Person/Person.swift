@@ -32,15 +32,12 @@ public class Person: DisplayDelegate
              self.lastName = lastName
              self.gender = gender
              self.birthDate = birthDate
-            if mobileNumber.mobileValid(){
-                self.mobileNumber = mobileNumber}
-            else{
-                throw CustomError.mobileInvalid
-            }
-            if email.emailValid(){
+           // if mobileNumber.mobileValid(){
+                self.mobileNumber = mobileNumber
+    //  }else{ throw CustomError.mobileInvalid}
+           // if email.emailValid(){
                 self.emailId = email
-            }else
-            {throw CustomError.emailInvalid}
+          //  }else{throw CustomError.emailInvalid}
             
              self.userName = userName
              self.password = password
