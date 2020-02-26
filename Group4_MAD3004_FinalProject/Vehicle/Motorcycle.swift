@@ -31,5 +31,6 @@ public class Motorcycle: Vehicle
         super.display()
         print("Max Top Speed: \(self.maxTopSpeed.concatKmhr())")
         print("Milage: \(self.milage)")
+        print("------------------------------------------------------")
     }
 }

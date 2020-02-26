@@ -34,5 +34,6 @@ public class Car: Vehicle
         super.display()
         print("Car Type: \(self.carType)")
         print("Car Color: \(self.carColor)")
+        print("------------------------------------------------------")
     }
 }

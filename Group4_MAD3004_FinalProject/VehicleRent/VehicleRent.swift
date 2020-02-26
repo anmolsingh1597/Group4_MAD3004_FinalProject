@@ -42,11 +42,13 @@ public class VehicleRent : DisplayDelegate
     }
     
     func display() {
-        print("Rent Start Date: \(self.rentStartDate.getFormattedDate())")
-        print("Rent End Date: \(self.rentEndDate.getFormattedDate())")
-        print("No of Days: \(self.noOfDays)")
-        print("Vehicle: \(self.vehicle.manufacturerName+" "+self.vehicle.vehicleDescription)")
-        print("No of Km drove: \(self.noOfKmDrived.concatKm())")
-        print("Total Bill: \(totalBillToPay().getFormattedAmount())")
+        print("\t\t-----Vehicle Rent-----")
+        print("\t\t----------------------")
+        print("\t\tRent Start Date: \(self.rentStartDate.getFormattedDate())")
+        print("\t\tRent End Date: \(self.rentEndDate.getFormattedDate())")
+        print("\t\tNo of Days: \(self.noOfDays)")
+        print("\t\tVehicle: \(self.vehicle.manufacturerName+" "+self.vehicle.vehicleDescription)")
+        print("\t\tNo of Km drove: \(self.noOfKmDrived.concatKm())")
+        print("\t\tTotal Bill: \(totalBillToPay().getFormattedAmount())")
     }
 }

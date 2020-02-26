@@ -27,6 +27,7 @@ public class Driver: Person
     
     override func display() {
         print("-----Driver-----")
+        print("----------------")
         print("Id: \(self.id.concatDriverPrefix())")
         super.display()
         print("Licence Number: \(self.drivingLicenceNumber)")
@@ -36,5 +37,6 @@ public class Driver: Person
                         print("Driving History: Not_Clear")
                     }
         print("Salary: $\(self.salary)")
+        print("------------------------------------------------------")
     }
 }
