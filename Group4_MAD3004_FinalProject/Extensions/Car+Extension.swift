@@ -11,19 +11,19 @@ import Foundation
 extension Car {
     var dataDictionary: [String: Any] {
     return [
-        "vin": self.vehicleIdentificationNumber,
-        "vehicleDescription": self.vehicleDescription,
-        "manufacturerName": self.manufacturerName,
-        "selfDrive": self.isSelfDrive,
-        "driver": self.driverName,
-        "isInsured": self.isInsured,
-        "insuranceProviderName": self.insuranceProviderName,
-        "noOfSeats": self.noOfSeat,
+        "01.vin": self.vehicleIdentificationNumber,
+        "02.vehicleDescription": self.vehicleDescription,
+        "03.manufacturerName": self.manufacturerName,
+        "04.selfDrive": self.isSelfDrive,
+        "05.driver": self.driverName,
+        "06.isInsured": self.isInsured,
+        "07.insuranceProviderName": self.insuranceProviderName,
+        "08.noOfSeats": self.noOfSeat,
         //"fuelType": self.fuelType,
-        "baseRate": self.baseRate.getFormattedAmount(),
-        "ratePerKm": self.ratePerKm.getFormattedAmount(),
+        "09.baseRate": self.baseRate.getFormattedAmount(),
+        "10.ratePerKm": self.ratePerKm.getFormattedAmount(),
         //"carType": self.carType,
-        "carColor": self.carColor
+        "11.carColor": self.carColor
     ];
   }
 }

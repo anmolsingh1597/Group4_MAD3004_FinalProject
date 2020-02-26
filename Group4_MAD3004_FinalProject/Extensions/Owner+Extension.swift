@@ -11,19 +11,19 @@ import Foundation
 extension Owner {
     var dataDictionary: [String: Any] {
     return [
-    "id": self.id.concatOwnerPrefix(),
-    "firstName": self.firstName,
-    "lastName": self.lastName,
-    "dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
+    "01.id": self.id.concatOwnerPrefix(),
+    "02.firstName": self.firstName,
+    "03.lastName": self.lastName,
+    "04.dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
 //  "gender": self.gender,
-    "mobile": self.mobileNumber,
-    "email": self.emailId,
-    "username": self.userName,
-    "password": self.password,
-    "company_title": self.companyTitle ?? "No Company provided",
-    "business number": self.businessNumber?.mobileNumberValidation() ?? "No Number provided",
-    "website": self.website ?? "No webiste provided",
-    "vehicle_list": self.vehicleDictionary
+    "05.mobile": self.mobileNumber,
+    "06.email": self.emailId,
+    "07.username": self.userName,
+    "08.password": self.password,
+    "09.company_title": self.companyTitle ?? "No Company provided",
+    "10.business number": self.businessNumber?.mobileNumberValidation() ?? "No Number provided",
+    "11.website": self.website ?? "No webiste provided",
+    "12.vehicle_list": self.vehicleDictionary
     ];
   }
 }

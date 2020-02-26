@@ -11,18 +11,18 @@ import Foundation
 extension Driver {
     var dataDictionary: [String: Any] {
     return [
-    "id": self.id.concatDriverPrefix(),
-    "firstName": self.firstName,
-    "lastName": self.lastName,
-    "dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
+    "01.id": self.id.concatDriverPrefix(),
+    "02.firstName": self.firstName,
+    "03.lastName": self.lastName,
+    "04.dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
 //  "gender": self.gender,
-    "mobile": self.mobileNumber,
-    "email": self.emailId,
-    "username": self.userName,
-    "password": self.password,
-    "licence_number": self.drivingLicenceNumber,
-    "driving_history": self.isDrivingHistoryCleared,
-    "salary": self.salary.getFormattedAmount()
+    "05.mobile": self.mobileNumber,
+    "06.email": self.emailId,
+    "07.username": self.userName,
+    "08.password": self.password,
+    "09.licence_number": self.drivingLicenceNumber,
+    "10.driving_history": self.isDrivingHistoryCleared,
+    "11.salary": self.salary.getFormattedAmount()
     ];
   }
 }
