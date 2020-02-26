@@ -15,19 +15,19 @@ extension Customer {
     "02.firstName": self.firstName,
     "03.lastName": self.lastName,
     "04.dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
-//  "gender": self.gender,
-    "05.mobile": self.mobileNumber,
-    "06.email": self.emailId,
-    "07.username": self.userName,
-    "08.password": self.password,
-    "09.address": self.address ?? "No address provided",
-    "10.city": self.city ?? "No city provided",
-    "11.rentStartDate": self.vehicleRent.rentStartDate.getFormattedDate(),
-    "12.rentEndDate": self.vehicleRent.rentEndDate.getFormattedDate(),
-    "13.noOfDays": self.vehicleRent.noOfDays,
-    "14.Vehicle": self.vehicleRent.vehicle.manufacturerName,
-    "15.No of Km drove": self.vehicleRent.noOfKmDrived.concatKm(),
-    "16.Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
+    "05.gender": self.gender.rawValue,
+    "06.mobile": self.mobileNumber,
+    "07.email": self.emailId,
+    "08.username": self.userName,
+    "09.password": self.password,
+    "10.address": self.address ?? "No address provided",
+    "11.city": self.city ?? "No city provided",
+    "12.rentStartDate": self.vehicleRent.rentStartDate.getFormattedDate(),
+    "13.rentEndDate": self.vehicleRent.rentEndDate.getFormattedDate(),
+    "14.noOfDays": self.vehicleRent.noOfDays,
+    "15.Vehicle": self.vehicleRent.vehicle.manufacturerName,
+    "16.No of Km drove": self.vehicleRent.noOfKmDrived.concatKm(),
+    "17.Vehicle Rent": self.vehicleRent.totalBillToPay().getFormattedAmount()
     ];
   }
 }

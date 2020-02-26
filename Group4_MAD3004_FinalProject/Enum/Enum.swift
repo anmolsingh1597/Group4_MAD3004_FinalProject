@@ -10,25 +10,25 @@ import Foundation
 
 public struct Enum
 {
-    enum Gender {
+    enum Gender: String {
         case Male
         case Female
         case Other
     }
     
-    enum FuelType{
+    enum FuelType: String{
         case Petrol
         case Diesel
         case Electric
     }
     
-    enum CarType{
+    enum CarType: String{
         case SUV
         case Sedan
         case Luxury
     }
     
-    enum BusType{
+    enum BusType: String{
         case Mini
         case Volvo
         case DoubleDecker

@@ -15,14 +15,14 @@ extension Driver {
     "02.firstName": self.firstName,
     "03.lastName": self.lastName,
     "04.dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
-//  "gender": self.gender,
-    "05.mobile": self.mobileNumber,
-    "06.email": self.emailId,
-    "07.username": self.userName,
-    "08.password": self.password,
-    "09.licence_number": self.drivingLicenceNumber,
-    "10.driving_history": self.isDrivingHistoryCleared,
-    "11.salary": self.salary.getFormattedAmount()
+    "05.gender": self.gender.rawValue,
+    "06.mobile": self.mobileNumber,
+    "07.email": self.emailId,
+    "08.username": self.userName,
+    "09.password": self.password,
+    "10.licence_number": self.drivingLicenceNumber,
+    "11.driving_history": self.isDrivingHistoryCleared,
+    "12.salary": self.salary.getFormattedAmount()
     ];
   }
 }

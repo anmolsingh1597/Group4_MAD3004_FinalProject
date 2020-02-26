@@ -15,15 +15,15 @@ extension Owner {
     "02.firstName": self.firstName,
     "03.lastName": self.lastName,
     "04.dateOfBirth": self.birthDate?.getFormattedDate() ?? Date(),
-//  "gender": self.gender,
-    "05.mobile": self.mobileNumber,
-    "06.email": self.emailId,
-    "07.username": self.userName,
-    "08.password": self.password,
-    "09.company_title": self.companyTitle ?? "No Company provided",
-    "10.business number": self.businessNumber?.mobileNumberValidation() ?? "No Number provided",
-    "11.website": self.website ?? "No webiste provided",
-    "12.vehicle_list": self.vehicleDictionary
+    "05.gender": self.gender.rawValue,
+    "06.mobile": self.mobileNumber,
+    "07.email": self.emailId,
+    "08.username": self.userName,
+    "09.password": self.password,
+    "10.company_title": self.companyTitle ?? "No Company provided",
+    "11.business number": self.businessNumber?.mobileNumberValidation() ?? "No Number provided",
+    "12.website": self.website ?? "No webiste provided",
+    "13.vehicle_list": self.vehicleDictionary
     ];
   }
 }
